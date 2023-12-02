@@ -1,4 +1,4 @@
-(kicad_sch (version 20211123) (generator eeschema)
+(kicad_sch (version 20230121) (generator eeschema)
 
   (uuid 30001e54-b931-4c99-a85a-cc67ed27d667)
 
@@ -9,25 +9,57 @@
 
 
   (sheet (at 200.7108 48.4632) (size 36.5252 32.9692) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 3eed219e-ef44-46a2-a482-b7191acccc64)
-    (property "Sheet name" "MCU" (id 0) (at 200.7108 47.7516 0)
+    (property "Sheetname" "MCU" (at 200.7108 47.7516 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheet file" "mcu.kicad_sch" (id 1) (at 200.7108 82.017 0)
+    (property "Sheetfile" "mcu.kicad_sch" (at 200.7108 82.017 0)
       (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 163.83 138.43) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 9cc5f9c6-3c68-4ae5-a9ab-38645611b9ab)
+    (property "Sheetname" "USB C CONN" (at 163.83 137.7184 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "usb_c_conn.kicad_sch" (at 163.83 142.8246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 219.71 125.73) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid b7a97f49-757d-4c5e-bef7-481a823edbaf)
+    (property "Sheetname" "USB HUB" (at 219.71 125.0184 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "USB_HUB.kicad_sch" (at 219.71 130.1246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667" (page "3"))
+      )
     )
   )
 
   (sheet_instances
     (path "/" (page "1"))
-    (path "/3eed219e-ef44-46a2-a482-b7191acccc64" (page "2"))
-  )
-
-  (symbol_instances
-    (path "/3eed219e-ef44-46a2-a482-b7191acccc64/01b2e235-a990-46d0-9a67-87f3009976a8"
-      (reference "U1") (unit 1) (value "~") (footprint "")
-    )
   )
 )
