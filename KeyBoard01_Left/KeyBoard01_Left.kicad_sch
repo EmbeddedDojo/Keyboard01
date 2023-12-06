@@ -4,6 +4,12 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Block Diagram")
+    (company "Embedded Dojo")
+    (comment 1 "imuguruza and hans")
+  )
+
   (lib_symbols
   )
 
@@ -29,32 +35,15 @@
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 9cc5f9c6-3c68-4ae5-a9ab-38645611b9ab)
-    (property "Sheetname" "USB C CONN" (at 163.83 137.7184 0)
+    (property "Sheetname" "USB C CONN & HUB" (at 163.83 137.7184 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "usb_c_conn.kicad_sch" (at 163.83 142.8246 0)
+    (property "Sheetfile" "usb_c_conn_and_hub.kicad_sch" (at 163.83 142.8246 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
       (project "KeyBoard01_Left"
         (path "/30001e54-b931-4c99-a85a-cc67ed27d667" (page "4"))
-      )
-    )
-  )
-
-  (sheet (at 219.71 125.73) (size 12.7 3.81) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid b7a97f49-757d-4c5e-bef7-481a823edbaf)
-    (property "Sheetname" "USB HUB" (at 219.71 125.0184 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "USB_HUB.kicad_sch" (at 219.71 130.1246 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "KeyBoard01_Left"
-        (path "/30001e54-b931-4c99-a85a-cc67ed27d667" (page "3"))
       )
     )
   )
