@@ -274,7 +274,10 @@
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/USB C CONN & HUB/USB_OUT_N": "90_DIFF",
+      "/USB C CONN & HUB/USB_OUT_P": "90_DIFF"
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
