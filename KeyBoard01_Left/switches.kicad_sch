@@ -72,396 +72,2004 @@
         )
       )
     )
-    (symbol "LED:APA102" (in_bom yes) (on_board yes)
-      (property "Reference" "D" (at 5.08 5.715 0)
-        (effects (font (size 1.27 1.27)) (justify right bottom))
+    (symbol "Switch:SW_Push" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "SW" (at 1.27 2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Value" "APA102" (at 1.27 -5.715 0)
-        (effects (font (size 1.27 1.27)) (justify left top))
-      )
-      (property "Footprint" "LED_SMD:LED_RGB_5050-6" (at 1.27 -7.62 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Datasheet" "http://www.led-color.com/upload/201506/APA102%20LED.pdf" (at 2.54 -9.525 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "ki_keywords" "RGB LED addressable 8bit pwm 5bit greyscale" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "RGB LED with integrated controller" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "LED*RGB*5050*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "APA102_0_0"
-        (text "RGB" (at 2.286 -4.191 0)
-          (effects (font (size 0.762 0.762)))
-        )
-      )
-      (symbol "APA102_0_1"
-        (polyline
-          (pts
-            (xy 1.27 -3.556)
-            (xy 1.778 -3.556)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 -2.54)
-            (xy 1.778 -2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 4.699 -3.556)
-            (xy 2.667 -3.556)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.286 -2.54)
-            (xy 1.27 -3.556)
-            (xy 1.27 -3.048)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.286 -1.524)
-            (xy 1.27 -2.54)
-            (xy 1.27 -2.032)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 3.683 -1.016)
-            (xy 3.683 -3.556)
-            (xy 3.683 -4.064)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 4.699 -1.524)
-            (xy 2.667 -1.524)
-            (xy 3.683 -3.556)
-            (xy 4.699 -1.524)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 5.08 5.08) (end -5.08 -5.08)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-      )
-      (symbol "APA102_1_1"
-        (pin input line (at -7.62 2.54 0) (length 2.54)
-          (name "DI" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -7.62 0 0) (length 2.54)
-          (name "CI" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 -7.62 90) (length 2.54)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 7.62 270) (length 2.54)
-          (name "VCC" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at 7.62 0 180) (length 2.54)
-          (name "CO" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at 7.62 2.54 180) (length 2.54)
-          (name "DO" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "LED:WS2812" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "D" (at 5.08 5.715 0)
-        (effects (font (size 1.27 1.27)) (justify right bottom))
-      )
-      (property "Value" "WS2812" (at 1.27 -5.715 0)
-        (effects (font (size 1.27 1.27)) (justify left top))
-      )
-      (property "Footprint" "LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" (at 1.27 -7.62 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812.pdf" (at 2.54 -9.525 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "ki_keywords" "RGB LED NeoPixel addressable" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "RGB LED with integrated controller" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "LED*WS2812*PLCC*5.0x5.0mm*P1.6mm*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "WS2812_0_0"
-        (text "RGB" (at 2.286 -4.191 0)
-          (effects (font (size 0.762 0.762)))
-        )
-      )
-      (symbol "WS2812_0_1"
-        (polyline
-          (pts
-            (xy 1.27 -3.556)
-            (xy 1.778 -3.556)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 -2.54)
-            (xy 1.778 -2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 4.699 -3.556)
-            (xy 2.667 -3.556)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.286 -2.54)
-            (xy 1.27 -3.556)
-            (xy 1.27 -3.048)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.286 -1.524)
-            (xy 1.27 -2.54)
-            (xy 1.27 -2.032)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 3.683 -1.016)
-            (xy 3.683 -3.556)
-            (xy 3.683 -4.064)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 4.699 -1.524)
-            (xy 2.667 -1.524)
-            (xy 3.683 -3.556)
-            (xy 4.699 -1.524)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 5.08 5.08) (end -5.08 -5.08)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-      )
-      (symbol "WS2812_1_1"
-        (pin output line (at 7.62 0 180) (length 2.54)
-          (name "DOUT" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -7.62 0 0) (length 2.54)
-          (name "DIN" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 7.62 270) (length 2.54)
-          (name "VCC" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin no_connect line (at 5.08 2.54 180) (length 2.54) hide
-          (name "NC" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at -2.54 7.62 270) (length 2.54)
-          (name "VDD" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 -7.62 90) (length 2.54)
-          (name "VSS" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+3V3" (at 0 3.556 0)
+      (property "Value" "SW_Push" (at 0 -1.524 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Footprint" "" (at 0 0 0)
+      (property "Footprint" "" (at 0 5.08 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "" (at 0 0 0)
+      (property "Datasheet" "~" (at 0 5.08 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "global power" (at 0 0 0)
+      (property "ki_keywords" "switch normally-open pushbutton push-button" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"+3V3\"" (at 0 0 0)
+      (property "ki_description" "Push button switch, generic, two pins" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "+3V3_0_1"
+      (symbol "SW_Push_0_1"
+        (circle (center -2.032 0) (radius 0.508)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
         (polyline
           (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
+            (xy 0 1.27)
+            (xy 0 3.048)
           )
           (stroke (width 0) (type default))
           (fill (type none))
         )
         (polyline
           (pts
-            (xy 0 0)
-            (xy 0 2.54)
+            (xy 2.54 1.27)
+            (xy -2.54 1.27)
           )
           (stroke (width 0) (type default))
           (fill (type none))
         )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
+        (circle (center 2.032 0) (radius 0.508)
           (stroke (width 0) (type default))
           (fill (type none))
         )
-      )
-      (symbol "+3V3_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3V3" (effects (font (size 1.27 1.27))))
+        (pin passive line (at -5.08 0 0) (length 2.54)
+          (name "1" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-      )
-    )
-    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
+        (pin passive line (at 5.08 0 180) (length 2.54)
+          (name "2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
         )
       )
     )
   )
 
+  (junction (at 179.07 39.37) (diameter 0) (color 0 0 0 0)
+    (uuid 005dc72d-a8ab-48c6-9ce8-d195f3ae01aa)
+  )
+  (junction (at 128.27 135.89) (diameter 0) (color 0 0 0 0)
+    (uuid 040b753c-3f2e-4bce-81f9-62b0cb4ddde9)
+  )
+  (junction (at 204.47 135.89) (diameter 0) (color 0 0 0 0)
+    (uuid 0db216b2-abf8-468b-b921-87a225a88646)
+  )
+  (junction (at 162.56 93.98) (diameter 0) (color 0 0 0 0)
+    (uuid 0f99ff9f-b367-4fdd-b87c-19eaebb180aa)
+  )
+  (junction (at 128.27 87.63) (diameter 0) (color 0 0 0 0)
+    (uuid 163dd24f-c471-4de5-9c14-c9f28214e9f9)
+  )
+  (junction (at 179.07 63.5) (diameter 0) (color 0 0 0 0)
+    (uuid 18d1c7cc-07f2-40a0-bbb8-28fe259e4007)
+  )
+  (junction (at 137.16 142.24) (diameter 0) (color 0 0 0 0)
+    (uuid 1a59e3ca-9627-48c2-9452-5d94564619db)
+  )
+  (junction (at 114.3 142.24) (diameter 0) (color 0 0 0 0)
+    (uuid 1af4d115-bef4-40ac-b87c-3ce102c925b2)
+  )
+  (junction (at 114.3 69.85) (diameter 0) (color 0 0 0 0)
+    (uuid 1ffdb3a0-44bd-4558-972f-76bc8b9f3acc)
+  )
+  (junction (at 204.47 63.5) (diameter 0) (color 0 0 0 0)
+    (uuid 2121024e-7232-40bf-ae63-7f7b5046ca79)
+  )
+  (junction (at 187.96 69.85) (diameter 0) (color 0 0 0 0)
+    (uuid 24dccc1b-afcd-4c7e-9a15-105567b73c8c)
+  )
+  (junction (at 105.41 135.89) (diameter 0) (color 0 0 0 0)
+    (uuid 27eeefd4-5180-4683-8550-edc2aa884322)
+  )
+  (junction (at 162.56 69.85) (diameter 0) (color 0 0 0 0)
+    (uuid 2bd925c6-940d-44ea-bc20-13d5f6c21229)
+  )
+  (junction (at 137.16 69.85) (diameter 0) (color 0 0 0 0)
+    (uuid 2c0b8438-c243-4d17-aaca-838d05b8ab11)
+  )
+  (junction (at 114.3 21.59) (diameter 0) (color 0 0 0 0)
+    (uuid 2f68026d-33c9-48a6-b179-2c51be9f2549)
+  )
+  (junction (at 187.96 21.59) (diameter 0) (color 0 0 0 0)
+    (uuid 5a79f6bc-1663-4553-befa-1c1a1c7eda52)
+  )
+  (junction (at 88.9 69.85) (diameter 0) (color 0 0 0 0)
+    (uuid 5ad40441-1433-47e1-9ea5-9bb7fdcbc408)
+  )
+  (junction (at 137.16 118.11) (diameter 0) (color 0 0 0 0)
+    (uuid 630a75c9-2b22-4540-8d6e-752bc94915c5)
+  )
+  (junction (at 137.16 45.72) (diameter 0) (color 0 0 0 0)
+    (uuid 6896cb91-8208-4628-b199-9fe4c34a253e)
+  )
+  (junction (at 179.07 111.76) (diameter 0) (color 0 0 0 0)
+    (uuid 702c20c2-4d1a-4696-a9fb-4e32c48f437d)
+  )
+  (junction (at 153.67 39.37) (diameter 0) (color 0 0 0 0)
+    (uuid 713e6734-5469-40c9-8a4d-4c19e589de72)
+  )
+  (junction (at 128.27 63.5) (diameter 0) (color 0 0 0 0)
+    (uuid 74ab6d15-e1a0-41c4-abba-41d69ec6b2bc)
+  )
+  (junction (at 80.01 87.63) (diameter 0) (color 0 0 0 0)
+    (uuid 76fbf1ed-856e-48fb-96ca-c1636d40bdf5)
+  )
+  (junction (at 105.41 63.5) (diameter 0) (color 0 0 0 0)
+    (uuid 782f3e6a-c919-488a-ad6f-a627faef6f23)
+  )
+  (junction (at 88.9 93.98) (diameter 0) (color 0 0 0 0)
+    (uuid 7dbe24e5-8f1f-4116-ac44-01e0614e90a0)
+  )
+  (junction (at 114.3 45.72) (diameter 0) (color 0 0 0 0)
+    (uuid 86289d39-2e97-4e9b-9e90-986ffbc6fd1b)
+  )
+  (junction (at 204.47 111.76) (diameter 0) (color 0 0 0 0)
+    (uuid 91156700-e895-4a40-a2b6-7bffc8b75f6c)
+  )
+  (junction (at 153.67 135.89) (diameter 0) (color 0 0 0 0)
+    (uuid 913d2152-60ee-4007-a3c8-5ff83b2f4be1)
+  )
+  (junction (at 88.9 21.59) (diameter 0) (color 0 0 0 0)
+    (uuid 91ac89f6-997a-48b9-b65e-103ab241ec6a)
+  )
+  (junction (at 88.9 142.24) (diameter 0) (color 0 0 0 0)
+    (uuid 921791ae-c8b0-411d-977b-c40fddef2bc1)
+  )
+  (junction (at 187.96 118.11) (diameter 0) (color 0 0 0 0)
+    (uuid 98e44240-03b3-48ab-a871-c8ca5ee36a7d)
+  )
+  (junction (at 105.41 111.76) (diameter 0) (color 0 0 0 0)
+    (uuid 9909cea1-f207-456a-b24f-8682ab392d64)
+  )
+  (junction (at 105.41 39.37) (diameter 0) (color 0 0 0 0)
+    (uuid 9a28f204-447f-4eae-a847-d6cedefcddf4)
+  )
+  (junction (at 153.67 111.76) (diameter 0) (color 0 0 0 0)
+    (uuid a9cb7db2-ed2c-4b44-9c1f-ce595df29026)
+  )
+  (junction (at 153.67 63.5) (diameter 0) (color 0 0 0 0)
+    (uuid ad0f944f-5942-47e1-909a-79be8eca38c7)
+  )
+  (junction (at 80.01 63.5) (diameter 0) (color 0 0 0 0)
+    (uuid af125a68-77d5-4dd5-b360-4a510e98df2f)
+  )
+  (junction (at 105.41 87.63) (diameter 0) (color 0 0 0 0)
+    (uuid b517c469-a203-4eb9-b234-1b48878c21ea)
+  )
+  (junction (at 162.56 21.59) (diameter 0) (color 0 0 0 0)
+    (uuid b5b0b998-3ac7-4771-8115-0d5e355bc77d)
+  )
+  (junction (at 137.16 21.59) (diameter 0) (color 0 0 0 0)
+    (uuid b9c6e8f2-9366-4b31-a288-8a120e90cd65)
+  )
+  (junction (at 80.01 111.76) (diameter 0) (color 0 0 0 0)
+    (uuid bb817c43-e5e1-482c-a548-fc0521f21a45)
+  )
+  (junction (at 204.47 87.63) (diameter 0) (color 0 0 0 0)
+    (uuid bb9c2de0-8042-4b36-b3ff-5a2403984a95)
+  )
+  (junction (at 88.9 45.72) (diameter 0) (color 0 0 0 0)
+    (uuid c14c7f0e-b058-4724-a296-e5580e7cefb7)
+  )
+  (junction (at 80.01 135.89) (diameter 0) (color 0 0 0 0)
+    (uuid c642733c-acb9-49bc-9a16-50e6ec88022f)
+  )
+  (junction (at 153.67 87.63) (diameter 0) (color 0 0 0 0)
+    (uuid cd280542-2b3e-4528-9bb3-ddf2e3a40b26)
+  )
+  (junction (at 162.56 142.24) (diameter 0) (color 0 0 0 0)
+    (uuid cdb2b65d-0fb3-4968-9d54-ed72f9848a9d)
+  )
+  (junction (at 204.47 39.37) (diameter 0) (color 0 0 0 0)
+    (uuid d7d12441-0d7f-41a1-a636-64d68f971a39)
+  )
+  (junction (at 162.56 45.72) (diameter 0) (color 0 0 0 0)
+    (uuid d85af2fd-ab73-4b9a-9f9c-74f8f3348865)
+  )
+  (junction (at 162.56 118.11) (diameter 0) (color 0 0 0 0)
+    (uuid d8aeadb6-7614-4274-9ffc-93775978bb39)
+  )
+  (junction (at 88.9 118.11) (diameter 0) (color 0 0 0 0)
+    (uuid d8b3b131-fc00-4fee-8861-d72b423d3950)
+  )
+  (junction (at 179.07 135.89) (diameter 0) (color 0 0 0 0)
+    (uuid d9dc9215-0eb6-4dab-a721-57f2f0729875)
+  )
+  (junction (at 128.27 39.37) (diameter 0) (color 0 0 0 0)
+    (uuid dde3f268-6507-499e-8395-cb93985ec277)
+  )
+  (junction (at 137.16 93.98) (diameter 0) (color 0 0 0 0)
+    (uuid de3a368c-96cb-42a9-a16c-2a94f271faf2)
+  )
+  (junction (at 187.96 142.24) (diameter 0) (color 0 0 0 0)
+    (uuid df04b936-474a-4060-9ac3-a1c674727def)
+  )
+  (junction (at 187.96 45.72) (diameter 0) (color 0 0 0 0)
+    (uuid df050236-f4bb-4bc7-9f96-7d0822f941c4)
+  )
+  (junction (at 114.3 93.98) (diameter 0) (color 0 0 0 0)
+    (uuid e0a11235-f90a-4d37-b405-171de3187c48)
+  )
+  (junction (at 80.01 39.37) (diameter 0) (color 0 0 0 0)
+    (uuid e0ed5022-a30a-498d-a76c-9af98f393d0f)
+  )
+  (junction (at 187.96 93.98) (diameter 0) (color 0 0 0 0)
+    (uuid e61ed1d8-8f7b-4d3a-9eb9-20eeac689f38)
+  )
+  (junction (at 179.07 87.63) (diameter 0) (color 0 0 0 0)
+    (uuid e8e0c7c4-5b08-4d72-a299-58f8b782ae42)
+  )
+  (junction (at 114.3 118.11) (diameter 0) (color 0 0 0 0)
+    (uuid ef429311-3531-488d-86b9-ca1ec9c5a05a)
+  )
+  (junction (at 128.27 111.76) (diameter 0) (color 0 0 0 0)
+    (uuid f4ad7d55-79aa-4f05-b912-441e7e8d1175)
+  )
+
+  (wire (pts (xy 97.79 63.5) (xy 99.06 63.5))
+    (stroke (width 0) (type default))
+    (uuid 016f9821-ed1a-489f-a6f6-b0361e90dfb9)
+  )
+  (wire (pts (xy 105.41 39.37) (xy 115.57 39.37))
+    (stroke (width 0) (type default))
+    (uuid 02501e5b-4407-4ad4-86bf-88965bb67183)
+  )
+  (wire (pts (xy 163.83 111.76) (xy 153.67 111.76))
+    (stroke (width 0) (type default))
+    (uuid 04aca1c9-d1c0-4523-869e-0afd4b1c7426)
+  )
+  (wire (pts (xy 137.16 45.72) (xy 162.56 45.72))
+    (stroke (width 0) (type default))
+    (uuid 0822de74-e106-4d76-8ace-f5a790989aad)
+  )
+  (wire (pts (xy 99.06 58.42) (xy 99.06 63.5))
+    (stroke (width 0) (type default))
+    (uuid 08b9d120-d45c-48bf-9e1f-95e661e03f23)
+  )
+  (wire (pts (xy 99.06 82.55) (xy 99.06 87.63))
+    (stroke (width 0) (type default))
+    (uuid 08f2b80e-7e94-4193-b282-45c098cf2842)
+  )
+  (wire (pts (xy 162.56 69.85) (xy 187.96 69.85))
+    (stroke (width 0) (type default))
+    (uuid 0f23a628-08d4-4c03-a0e5-9c66f26cb353)
+  )
+  (wire (pts (xy 88.9 45.72) (xy 88.9 58.42))
+    (stroke (width 0) (type default))
+    (uuid 1284fe0d-8af1-43f7-9b94-6d68906eeb42)
+  )
+  (wire (pts (xy 162.56 21.59) (xy 187.96 21.59))
+    (stroke (width 0) (type default))
+    (uuid 14bb154b-2bad-4216-a126-d3809bc34f87)
+  )
+  (wire (pts (xy 247.65 135.89) (xy 248.92 135.89))
+    (stroke (width 0) (type default))
+    (uuid 15b5dbd4-a8e2-4c33-abd0-91f75a447b78)
+  )
+  (wire (pts (xy 80.01 15.24) (xy 76.2 15.24))
+    (stroke (width 0) (type default))
+    (uuid 18bddcb9-5982-4c32-bcc8-5911e0acbd59)
+  )
+  (wire (pts (xy 128.27 39.37) (xy 138.43 39.37))
+    (stroke (width 0) (type default))
+    (uuid 1cbda2f2-61f1-4855-a922-0a306dfacf8d)
+  )
+  (wire (pts (xy 90.17 87.63) (xy 80.01 87.63))
+    (stroke (width 0) (type default))
+    (uuid 1cfe6b2d-c973-4c57-b2c8-826dbeb92821)
+  )
+  (wire (pts (xy 80.01 39.37) (xy 80.01 15.24))
+    (stroke (width 0) (type default))
+    (uuid 1e90011e-c355-44c2-953a-385440fd050d)
+  )
+  (wire (pts (xy 204.47 15.24) (xy 200.66 15.24))
+    (stroke (width 0) (type default))
+    (uuid 1f006517-476f-4266-9a52-80eabf73290b)
+  )
+  (wire (pts (xy 123.19 39.37) (xy 124.46 39.37))
+    (stroke (width 0) (type default))
+    (uuid 1f40cc52-6dd3-46c8-b4be-cd47ec7cc082)
+  )
+  (wire (pts (xy 171.45 39.37) (xy 172.72 39.37))
+    (stroke (width 0) (type default))
+    (uuid 1febbe9f-8463-4853-a134-d88f06dab82c)
+  )
+  (wire (pts (xy 128.27 111.76) (xy 128.27 87.63))
+    (stroke (width 0) (type default))
+    (uuid 20e2f2e0-fd78-4296-9501-aaefbeb13c45)
+  )
+  (wire (pts (xy 99.06 154.94) (xy 99.06 160.02))
+    (stroke (width 0) (type default))
+    (uuid 214ca6e5-e688-425c-9efc-1d5a8ccfacbb)
+  )
+  (wire (pts (xy 124.46 130.81) (xy 124.46 135.89))
+    (stroke (width 0) (type default))
+    (uuid 21891ab1-2a68-4db9-a323-7bc112c31e2e)
+  )
+  (wire (pts (xy 213.36 106.68) (xy 213.36 93.98))
+    (stroke (width 0) (type default))
+    (uuid 2252e037-c24c-4cfa-b36a-3cc927959fb2)
+  )
+  (wire (pts (xy 196.85 135.89) (xy 198.12 135.89))
+    (stroke (width 0) (type default))
+    (uuid 2277e7f5-5436-4200-b7f5-effc311928b4)
+  )
+  (wire (pts (xy 138.43 87.63) (xy 128.27 87.63))
+    (stroke (width 0) (type default))
+    (uuid 233b37ab-f094-413a-933e-d42bbeb1ed0e)
+  )
+  (wire (pts (xy 105.41 63.5) (xy 105.41 87.63))
+    (stroke (width 0) (type default))
+    (uuid 258009b9-1e3e-4466-8041-37ba98cac039)
+  )
+  (wire (pts (xy 138.43 160.02) (xy 128.27 160.02))
+    (stroke (width 0) (type default))
+    (uuid 260c4f0f-5e71-4a97-a3ba-fcc775ff4374)
+  )
+  (wire (pts (xy 163.83 135.89) (xy 153.67 135.89))
+    (stroke (width 0) (type default))
+    (uuid 26f0074e-e5b1-4acf-a675-05cea1390911)
+  )
+  (wire (pts (xy 196.85 87.63) (xy 198.12 87.63))
+    (stroke (width 0) (type default))
+    (uuid 276d1a59-04c5-40dc-bb9c-32496e7d23b0)
+  )
+  (wire (pts (xy 240.03 135.89) (xy 240.03 160.02))
+    (stroke (width 0) (type default))
+    (uuid 280095f0-9aac-4d0b-b440-cc08f5861d3e)
+  )
+  (wire (pts (xy 179.07 111.76) (xy 179.07 87.63))
+    (stroke (width 0) (type default))
+    (uuid 29634eae-b44e-4506-a87a-88b491498757)
+  )
+  (wire (pts (xy 153.67 39.37) (xy 153.67 15.24))
+    (stroke (width 0) (type default))
+    (uuid 2a0376b6-27d5-4b1f-b0a2-193078eed8fc)
+  )
+  (wire (pts (xy 137.16 69.85) (xy 162.56 69.85))
+    (stroke (width 0) (type default))
+    (uuid 2a5e9f12-591f-4ea0-8c39-270c4d6fe680)
+  )
+  (wire (pts (xy 114.3 154.94) (xy 114.3 142.24))
+    (stroke (width 0) (type default))
+    (uuid 2a95ff05-19dc-44bd-9889-b8582081888e)
+  )
+  (wire (pts (xy 114.3 82.55) (xy 114.3 69.85))
+    (stroke (width 0) (type default))
+    (uuid 2bd22ca6-fee9-469d-b4d3-444f13829c41)
+  )
+  (wire (pts (xy 128.27 63.5) (xy 128.27 87.63))
+    (stroke (width 0) (type default))
+    (uuid 2d1491b6-08e4-4934-897f-a97e1dbb321f)
+  )
+  (wire (pts (xy 162.56 34.29) (xy 162.56 21.59))
+    (stroke (width 0) (type default))
+    (uuid 2ec21a00-1a4e-423b-b9d2-e268960e8759)
+  )
+  (wire (pts (xy 138.43 111.76) (xy 128.27 111.76))
+    (stroke (width 0) (type default))
+    (uuid 30f4c442-0ece-4c03-a93c-bb3f8d707065)
+  )
+  (wire (pts (xy 223.52 82.55) (xy 223.52 87.63))
+    (stroke (width 0) (type default))
+    (uuid 310d8577-7122-487d-8d07-f4aa3b772d6e)
+  )
+  (wire (pts (xy 80.01 111.76) (xy 80.01 87.63))
+    (stroke (width 0) (type default))
+    (uuid 3250aaf9-8969-4fab-af39-a3e11ca05b40)
+  )
+  (wire (pts (xy 115.57 63.5) (xy 105.41 63.5))
+    (stroke (width 0) (type default))
+    (uuid 35950ebf-ff1c-4720-b057-a40e0b895a95)
+  )
+  (wire (pts (xy 147.32 82.55) (xy 147.32 87.63))
+    (stroke (width 0) (type default))
+    (uuid 36c43bfd-5242-4879-ba4f-44c5e2343c1f)
+  )
+  (wire (pts (xy 90.17 111.76) (xy 80.01 111.76))
+    (stroke (width 0) (type default))
+    (uuid 36f0bcca-641e-48e2-bec0-d855ec945df3)
+  )
+  (polyline (pts (xy 44.45 187.96) (xy 44.45 182.88))
+    (stroke (width 1) (type default) (color 255 153 0 1))
+    (uuid 374dd8e8-233b-4a28-bf01-1135e61703ff)
+  )
+
+  (wire (pts (xy 123.19 135.89) (xy 124.46 135.89))
+    (stroke (width 0) (type default))
+    (uuid 377952c8-7a2e-46c0-92a4-9b163398661a)
+  )
+  (wire (pts (xy 57.15 21.59) (xy 88.9 21.59))
+    (stroke (width 0) (type default))
+    (uuid 37e524b8-42f4-4214-819f-4d145f47411e)
+  )
+  (wire (pts (xy 115.57 111.76) (xy 105.41 111.76))
+    (stroke (width 0) (type default))
+    (uuid 3951e3ec-6685-4acd-8d07-580f3c9e5b41)
+  )
+  (wire (pts (xy 88.9 45.72) (xy 114.3 45.72))
+    (stroke (width 0) (type default))
+    (uuid 3985f689-4646-49e8-9ac0-93e603f0f869)
+  )
+  (wire (pts (xy 187.96 58.42) (xy 187.96 45.72))
+    (stroke (width 0) (type default))
+    (uuid 3a9147c5-f35d-4dcd-984f-1e4bd8988d79)
+  )
+  (wire (pts (xy 88.9 82.55) (xy 88.9 69.85))
+    (stroke (width 0) (type default))
+    (uuid 3c2e553c-7d01-407d-9a13-a601c563b380)
+  )
+  (wire (pts (xy 163.83 160.02) (xy 153.67 160.02))
+    (stroke (width 0) (type default))
+    (uuid 3c75e1c8-a28a-4447-8824-5c1b0aa4f7e0)
+  )
+  (wire (pts (xy 124.46 154.94) (xy 124.46 160.02))
+    (stroke (width 0) (type default))
+    (uuid 3d489e11-5a17-483d-aa07-625430067987)
+  )
+  (wire (pts (xy 214.63 87.63) (xy 204.47 87.63))
+    (stroke (width 0) (type default))
+    (uuid 3d66c9ed-a496-44f6-8e81-42964fc90276)
+  )
+  (wire (pts (xy 214.63 135.89) (xy 204.47 135.89))
+    (stroke (width 0) (type default))
+    (uuid 3e8f0f6e-fd60-4bf0-98db-fe5a45156ee5)
+  )
+  (wire (pts (xy 137.16 118.11) (xy 162.56 118.11))
+    (stroke (width 0) (type default))
+    (uuid 3f7f5788-87df-47f1-8885-9cc05c0737b8)
+  )
+  (wire (pts (xy 189.23 160.02) (xy 179.07 160.02))
+    (stroke (width 0) (type default))
+    (uuid 3f892d77-f867-4737-897d-58241be15335)
+  )
+  (wire (pts (xy 97.79 111.76) (xy 99.06 111.76))
+    (stroke (width 0) (type default))
+    (uuid 40b5f9b3-79f3-4f47-a6b4-6043154a9dfb)
+  )
+  (wire (pts (xy 222.25 111.76) (xy 223.52 111.76))
+    (stroke (width 0) (type default))
+    (uuid 41aab581-9684-4231-a7a0-b5af6e0b6044)
+  )
+  (wire (pts (xy 162.56 154.94) (xy 162.56 142.24))
+    (stroke (width 0) (type default))
+    (uuid 41fa7827-23d0-4b96-9ee6-1aad298e9181)
+  )
+  (wire (pts (xy 213.36 34.29) (xy 213.36 21.59))
+    (stroke (width 0) (type default))
+    (uuid 428339a7-3aac-474f-b304-d81572705bf9)
+  )
+  (wire (pts (xy 204.47 39.37) (xy 204.47 15.24))
+    (stroke (width 0) (type default))
+    (uuid 431aad06-5085-4e68-b4da-55df73969772)
+  )
+  (wire (pts (xy 115.57 87.63) (xy 105.41 87.63))
+    (stroke (width 0) (type default))
+    (uuid 442e23d5-d358-4354-a4e0-5755fdc90c0b)
+  )
+  (wire (pts (xy 198.12 82.55) (xy 198.12 87.63))
+    (stroke (width 0) (type default))
+    (uuid 45db4b9c-941f-41a4-8442-003a8e5e6ca3)
+  )
+  (wire (pts (xy 198.12 130.81) (xy 198.12 135.89))
+    (stroke (width 0) (type default))
+    (uuid 46a33ce2-bd83-4fe7-8e60-a48324dac4fd)
+  )
+  (wire (pts (xy 88.9 93.98) (xy 114.3 93.98))
+    (stroke (width 0) (type default))
+    (uuid 4b50d68a-8cb7-4695-a432-7aef60cdbf2b)
+  )
+  (wire (pts (xy 189.23 111.76) (xy 179.07 111.76))
+    (stroke (width 0) (type default))
+    (uuid 4b831109-3063-4390-90db-f8938c13181a)
+  )
+  (wire (pts (xy 124.46 82.55) (xy 124.46 87.63))
+    (stroke (width 0) (type default))
+    (uuid 4c36187c-0410-4f3f-a7af-af457ad366e4)
+  )
+  (wire (pts (xy 222.25 63.5) (xy 223.52 63.5))
+    (stroke (width 0) (type default))
+    (uuid 4ec15889-c9e8-4b7c-80ed-bb97a0ff1b6d)
+  )
+  (wire (pts (xy 115.57 160.02) (xy 105.41 160.02))
+    (stroke (width 0) (type default))
+    (uuid 4fdc95b3-8312-478f-9bd5-fdcd30efeaf7)
+  )
+  (wire (pts (xy 80.01 63.5) (xy 80.01 87.63))
+    (stroke (width 0) (type default))
+    (uuid 505e5bc6-0f8b-4e57-a391-ef8346c6c44c)
+  )
+  (wire (pts (xy 88.9 142.24) (xy 88.9 154.94))
+    (stroke (width 0) (type default))
+    (uuid 53486727-cc13-486b-9392-3576ce94930b)
+  )
+  (wire (pts (xy 114.3 69.85) (xy 137.16 69.85))
+    (stroke (width 0) (type default))
+    (uuid 57f045e4-9116-40ba-a689-1aefba24bf20)
+  )
+  (wire (pts (xy 153.67 15.24) (xy 149.86 15.24))
+    (stroke (width 0) (type default))
+    (uuid 58d51bdf-c50c-477a-a502-f5e9e0093fc8)
+  )
+  (wire (pts (xy 162.56 118.11) (xy 187.96 118.11))
+    (stroke (width 0) (type default))
+    (uuid 598114f9-3652-4a24-9928-a96da04a061c)
+  )
+  (wire (pts (xy 171.45 63.5) (xy 172.72 63.5))
+    (stroke (width 0) (type default))
+    (uuid 5b65aec2-946b-4128-8348-34bc3bd102b0)
+  )
+  (wire (pts (xy 88.9 93.98) (xy 88.9 106.68))
+    (stroke (width 0) (type default))
+    (uuid 5d91fcf3-5e1f-46b4-9369-30e977e6c934)
+  )
+  (wire (pts (xy 147.32 130.81) (xy 147.32 135.89))
+    (stroke (width 0) (type default))
+    (uuid 5f98a286-357b-4a77-a9c1-aadc2d449e2d)
+  )
+  (wire (pts (xy 80.01 160.02) (xy 80.01 135.89))
+    (stroke (width 0) (type default))
+    (uuid 5fad7bbc-9ba7-42ae-b24b-7b6c96862498)
+  )
+  (wire (pts (xy 187.96 69.85) (xy 213.36 69.85))
+    (stroke (width 0) (type default))
+    (uuid 60536609-c34b-4b51-b066-65161f7b446d)
+  )
+  (wire (pts (xy 90.17 160.02) (xy 80.01 160.02))
+    (stroke (width 0) (type default))
+    (uuid 61685582-26d4-40df-92ee-6d70b3d6e6a9)
+  )
+  (wire (pts (xy 179.07 135.89) (xy 179.07 111.76))
+    (stroke (width 0) (type default))
+    (uuid 620ee9fd-b178-4e64-b5f1-0402581d4ed0)
+  )
+  (wire (pts (xy 146.05 39.37) (xy 147.32 39.37))
+    (stroke (width 0) (type default))
+    (uuid 62d04248-1c29-40bb-97d2-0f97a8ae23ec)
+  )
+  (wire (pts (xy 124.46 58.42) (xy 124.46 63.5))
+    (stroke (width 0) (type default))
+    (uuid 63241eb1-2d3b-447b-b0c3-c44d9fe87f98)
+  )
+  (wire (pts (xy 172.72 34.29) (xy 172.72 39.37))
+    (stroke (width 0) (type default))
+    (uuid 646991e6-bec4-4f83-a0b9-e67c0652afd1)
+  )
+  (wire (pts (xy 179.07 39.37) (xy 179.07 15.24))
+    (stroke (width 0) (type default))
+    (uuid 648f564a-131a-4ac3-b636-ede8ac6bd8db)
+  )
+  (wire (pts (xy 147.32 106.68) (xy 147.32 111.76))
+    (stroke (width 0) (type default))
+    (uuid 64fe9478-3166-4068-b983-d40a4c5d539e)
+  )
+  (wire (pts (xy 57.15 93.98) (xy 88.9 93.98))
+    (stroke (width 0) (type default))
+    (uuid 65746d54-53ac-48dc-8155-7b38523456f1)
+  )
+  (wire (pts (xy 57.15 45.72) (xy 88.9 45.72))
+    (stroke (width 0) (type default))
+    (uuid 65e8e25a-008d-4214-a422-2139ec23d380)
+  )
+  (wire (pts (xy 223.52 58.42) (xy 223.52 63.5))
+    (stroke (width 0) (type default))
+    (uuid 66a9c6ad-7229-4a07-bd88-dfc7c1786507)
+  )
+  (wire (pts (xy 187.96 154.94) (xy 187.96 142.24))
+    (stroke (width 0) (type default))
+    (uuid 67305423-fd96-462d-81ff-8cb32944c5ca)
+  )
+  (wire (pts (xy 99.06 34.29) (xy 99.06 39.37))
+    (stroke (width 0) (type default))
+    (uuid 67cd249a-1866-437a-b743-bc3291ec78cf)
+  )
+  (wire (pts (xy 147.32 58.42) (xy 147.32 63.5))
+    (stroke (width 0) (type default))
+    (uuid 680acc26-364a-4b06-a0dc-f2f3d5e2e858)
+  )
+  (wire (pts (xy 123.19 160.02) (xy 124.46 160.02))
+    (stroke (width 0) (type default))
+    (uuid 6853aafb-ad96-4ac8-8b80-8da88f179f31)
+  )
+  (wire (pts (xy 88.9 142.24) (xy 114.3 142.24))
+    (stroke (width 0) (type default))
+    (uuid 6b6200af-c86c-4eb0-972e-b77f1294e24b)
+  )
+  (wire (pts (xy 153.67 63.5) (xy 153.67 87.63))
+    (stroke (width 0) (type default))
+    (uuid 6b65adc4-4e5a-4af8-b6c4-74d2c6f42cb9)
+  )
+  (wire (pts (xy 196.85 39.37) (xy 198.12 39.37))
+    (stroke (width 0) (type default))
+    (uuid 6c0abc06-ca17-452e-9ea8-5dcea8e42eac)
+  )
+  (polyline (pts (xy 44.45 182.88) (xy 41.91 182.88))
+    (stroke (width 1) (type default) (color 255 153 0 1))
+    (uuid 6ce81be3-6340-44d8-a859-691a7107f6cb)
+  )
+
+  (wire (pts (xy 147.32 34.29) (xy 147.32 39.37))
+    (stroke (width 0) (type default))
+    (uuid 6d817285-31cd-49bd-b2bc-7f5a04c3ab9a)
+  )
+  (wire (pts (xy 233.68 130.81) (xy 238.76 130.81))
+    (stroke (width 0) (type default))
+    (uuid 6e04c258-f82d-4cfe-b0e4-e69c6ef52265)
+  )
+  (polyline (pts (xy 10.16 167.64) (xy 10.16 199.39))
+    (stroke (width 1) (type default) (color 255 153 0 1))
+    (uuid 6e231e6e-85be-44ab-adc2-d4861af8a20e)
+  )
+
+  (wire (pts (xy 187.96 130.81) (xy 187.96 118.11))
+    (stroke (width 0) (type default))
+    (uuid 6e5ca5e2-7eef-425d-8823-53f8bdf8a581)
+  )
+  (wire (pts (xy 187.96 45.72) (xy 213.36 45.72))
+    (stroke (width 0) (type default))
+    (uuid 6ec777a1-75f7-4967-b761-58a6e3f5b806)
+  )
+  (wire (pts (xy 162.56 130.81) (xy 162.56 118.11))
+    (stroke (width 0) (type default))
+    (uuid 6fa8ee2e-ca37-4e96-8244-0a45edc57fa8)
+  )
+  (wire (pts (xy 162.56 106.68) (xy 162.56 93.98))
+    (stroke (width 0) (type default))
+    (uuid 6fbe49cc-c60f-4d2a-80f1-4d3a6b39467b)
+  )
+  (wire (pts (xy 137.16 93.98) (xy 162.56 93.98))
+    (stroke (width 0) (type default))
+    (uuid 71b0c3d1-7a14-4f1b-8192-2ad3d4812668)
+  )
+  (wire (pts (xy 128.27 15.24) (xy 124.46 15.24))
+    (stroke (width 0) (type default))
+    (uuid 73a6a263-2241-4781-b70b-7803dabb2c5f)
+  )
+  (wire (pts (xy 137.16 142.24) (xy 162.56 142.24))
+    (stroke (width 0) (type default))
+    (uuid 756583b2-67a0-4c0e-bd26-1f26c58b0c13)
+  )
+  (wire (pts (xy 223.52 130.81) (xy 223.52 135.89))
+    (stroke (width 0) (type default))
+    (uuid 75d18567-5a67-4a30-95a6-46a088c8cd9f)
+  )
+  (wire (pts (xy 114.3 58.42) (xy 114.3 45.72))
+    (stroke (width 0) (type default))
+    (uuid 7635997e-b06b-44bc-ad85-ae0b352b80b8)
+  )
+  (wire (pts (xy 187.96 93.98) (xy 213.36 93.98))
+    (stroke (width 0) (type default))
+    (uuid 77699b2f-f0ea-4c8f-a9aa-de2db83d6b75)
+  )
+  (wire (pts (xy 163.83 87.63) (xy 153.67 87.63))
+    (stroke (width 0) (type default))
+    (uuid 77f82966-1971-42ce-9861-bd36d921b964)
+  )
+  (wire (pts (xy 146.05 135.89) (xy 147.32 135.89))
+    (stroke (width 0) (type default))
+    (uuid 7961f518-8a52-47a0-8fcf-9c2dfaca16be)
+  )
+  (wire (pts (xy 172.72 58.42) (xy 172.72 63.5))
+    (stroke (width 0) (type default))
+    (uuid 79e00445-44da-4e07-bc72-ea3353cbd92f)
+  )
+  (wire (pts (xy 114.3 21.59) (xy 88.9 21.59))
+    (stroke (width 0) (type default))
+    (uuid 7ac0200b-5690-473a-a52d-87990fa47997)
+  )
+  (wire (pts (xy 99.06 130.81) (xy 99.06 135.89))
+    (stroke (width 0) (type default))
+    (uuid 7b510776-7a8b-4b95-a0e7-1429b8738f6b)
+  )
+  (wire (pts (xy 128.27 160.02) (xy 128.27 135.89))
+    (stroke (width 0) (type default))
+    (uuid 7bee5414-08ba-48f7-a155-39c5f0e0610c)
+  )
+  (wire (pts (xy 57.15 69.85) (xy 88.9 69.85))
+    (stroke (width 0) (type default))
+    (uuid 7c8b0cec-aa9c-4780-adea-4d3001216e5d)
+  )
+  (wire (pts (xy 97.79 39.37) (xy 99.06 39.37))
+    (stroke (width 0) (type default))
+    (uuid 7cce425e-272d-47ed-8094-f73d98c1954b)
+  )
+  (wire (pts (xy 123.19 87.63) (xy 124.46 87.63))
+    (stroke (width 0) (type default))
+    (uuid 7f29cd6c-6c17-4815-82f1-36e2f36c1298)
+  )
+  (wire (pts (xy 128.27 63.5) (xy 128.27 39.37))
+    (stroke (width 0) (type default))
+    (uuid 7fe86c96-1057-4d62-917a-ae1753487156)
+  )
+  (wire (pts (xy 204.47 135.89) (xy 204.47 111.76))
+    (stroke (width 0) (type default))
+    (uuid 8205defb-a8bf-4577-a5ac-7f99a664d3db)
+  )
+  (wire (pts (xy 146.05 87.63) (xy 147.32 87.63))
+    (stroke (width 0) (type default))
+    (uuid 865a2e44-d659-4049-9d07-8564c6d9e823)
+  )
+  (wire (pts (xy 213.36 58.42) (xy 213.36 45.72))
+    (stroke (width 0) (type default))
+    (uuid 86dea812-1812-41cb-926f-ddfe54a877d0)
+  )
+  (wire (pts (xy 105.41 160.02) (xy 105.41 135.89))
+    (stroke (width 0) (type default))
+    (uuid 89ed2248-3db7-4dff-9b59-8a99a7b14fa1)
+  )
+  (wire (pts (xy 204.47 63.5) (xy 204.47 39.37))
+    (stroke (width 0) (type default))
+    (uuid 8a5b9e97-e38c-4950-aaee-f04c9837f520)
+  )
+  (wire (pts (xy 172.72 154.94) (xy 172.72 160.02))
+    (stroke (width 0) (type default))
+    (uuid 8b7f6af9-e1ea-4aa5-8540-b32aff097910)
+  )
+  (wire (pts (xy 137.16 106.68) (xy 137.16 93.98))
+    (stroke (width 0) (type default))
+    (uuid 8bc26541-e090-4bd7-b048-00f4fec27826)
+  )
+  (wire (pts (xy 248.92 130.81) (xy 248.92 135.89))
+    (stroke (width 0) (type default))
+    (uuid 8d4ec81d-f2e1-49d5-a02d-328dd849b421)
+  )
+  (wire (pts (xy 171.45 135.89) (xy 172.72 135.89))
+    (stroke (width 0) (type default))
+    (uuid 8d90a883-92e5-4df6-83bc-faac207d6558)
+  )
+  (wire (pts (xy 114.3 106.68) (xy 114.3 93.98))
+    (stroke (width 0) (type default))
+    (uuid 8da42db1-3cb2-4078-8aa1-64da89c624bd)
+  )
+  (wire (pts (xy 153.67 63.5) (xy 153.67 39.37))
+    (stroke (width 0) (type default))
+    (uuid 90c97a99-271b-4bd4-9e34-079ea151218b)
+  )
+  (wire (pts (xy 213.36 82.55) (xy 213.36 69.85))
+    (stroke (width 0) (type default))
+    (uuid 918e75d4-0133-47af-ba14-a4b34db5d3fd)
+  )
+  (wire (pts (xy 233.68 142.24) (xy 187.96 142.24))
+    (stroke (width 0) (type default))
+    (uuid 92410671-9d4d-42bf-8374-6a090a89bcef)
+  )
+  (wire (pts (xy 162.56 58.42) (xy 162.56 45.72))
+    (stroke (width 0) (type default))
+    (uuid 979bcc9c-5917-46bb-b273-659613647ccd)
+  )
+  (wire (pts (xy 97.79 160.02) (xy 99.06 160.02))
+    (stroke (width 0) (type default))
+    (uuid 99238d69-4f10-42c7-a2ba-e724418a215c)
+  )
+  (wire (pts (xy 114.3 142.24) (xy 137.16 142.24))
+    (stroke (width 0) (type default))
+    (uuid 99328c42-4a2b-40cf-8ada-6b755af61f45)
+  )
+  (wire (pts (xy 179.07 15.24) (xy 175.26 15.24))
+    (stroke (width 0) (type default))
+    (uuid 9a75de42-baab-4d1f-851e-3c3b9d578014)
+  )
+  (wire (pts (xy 223.52 34.29) (xy 223.52 39.37))
+    (stroke (width 0) (type default))
+    (uuid 9a7e886d-f15a-46dd-ad7b-2bbd2ff639e2)
+  )
+  (wire (pts (xy 171.45 87.63) (xy 172.72 87.63))
+    (stroke (width 0) (type default))
+    (uuid 9d603362-23f0-4c23-8454-8426a32704c6)
+  )
+  (wire (pts (xy 163.83 63.5) (xy 153.67 63.5))
+    (stroke (width 0) (type default))
+    (uuid 9e3787b8-ae23-40b6-9290-69ead1ac3672)
+  )
+  (wire (pts (xy 128.27 39.37) (xy 128.27 15.24))
+    (stroke (width 0) (type default))
+    (uuid 9e923fed-c863-4172-8212-452b8f6d6a4f)
+  )
+  (wire (pts (xy 172.72 130.81) (xy 172.72 135.89))
+    (stroke (width 0) (type default))
+    (uuid 9f19a402-83ab-49a1-b5af-c6f2b7bbda14)
+  )
+  (wire (pts (xy 105.41 15.24) (xy 101.6 15.24))
+    (stroke (width 0) (type default))
+    (uuid a2c55a2d-a281-41fb-9dc5-594d6e677c60)
+  )
+  (wire (pts (xy 179.07 63.5) (xy 179.07 39.37))
+    (stroke (width 0) (type default))
+    (uuid a3bc2453-0bec-42bb-8882-320ec6872534)
+  )
+  (wire (pts (xy 114.3 34.29) (xy 114.3 21.59))
+    (stroke (width 0) (type default))
+    (uuid a58185fb-1a2a-44ef-a850-b43f1cc9de32)
+  )
+  (wire (pts (xy 222.25 39.37) (xy 223.52 39.37))
+    (stroke (width 0) (type default))
+    (uuid a5a9c532-5342-4309-ad1d-281e7e20610f)
+  )
+  (wire (pts (xy 80.01 39.37) (xy 90.17 39.37))
+    (stroke (width 0) (type default))
+    (uuid a5eeb73f-3500-42d6-a24d-094dcd844fee)
+  )
+  (wire (pts (xy 147.32 154.94) (xy 147.32 160.02))
+    (stroke (width 0) (type default))
+    (uuid a6565461-fd3c-4459-a70b-50b882574ed6)
+  )
+  (wire (pts (xy 198.12 106.68) (xy 198.12 111.76))
+    (stroke (width 0) (type default))
+    (uuid a674dea5-abcd-4f6c-bc8e-40122f8b87a6)
+  )
+  (wire (pts (xy 198.12 154.94) (xy 198.12 160.02))
+    (stroke (width 0) (type default))
+    (uuid a6b1015d-7a86-4325-9eb6-e67bec1793b8)
+  )
+  (wire (pts (xy 198.12 58.42) (xy 198.12 63.5))
+    (stroke (width 0) (type default))
+    (uuid a6fc051f-4bbf-4fca-b609-da40b02cb1c9)
+  )
+  (wire (pts (xy 99.06 106.68) (xy 99.06 111.76))
+    (stroke (width 0) (type default))
+    (uuid a7a8bd1d-bfa8-4784-9369-3e99094ca1f4)
+  )
+  (wire (pts (xy 137.16 130.81) (xy 137.16 118.11))
+    (stroke (width 0) (type default))
+    (uuid a7f52638-4fb0-451c-947b-a783f021fb18)
+  )
+  (wire (pts (xy 171.45 111.76) (xy 172.72 111.76))
+    (stroke (width 0) (type default))
+    (uuid a80689fa-ba54-4b9e-99f6-2fc3632584f9)
+  )
+  (wire (pts (xy 114.3 21.59) (xy 137.16 21.59))
+    (stroke (width 0) (type default))
+    (uuid a9b8bd26-010b-4c63-a269-b331f55254f3)
+  )
+  (wire (pts (xy 88.9 34.29) (xy 88.9 21.59))
+    (stroke (width 0) (type default))
+    (uuid ad208d41-86e8-45c5-bf35-e35717742194)
+  )
+  (wire (pts (xy 123.19 63.5) (xy 124.46 63.5))
+    (stroke (width 0) (type default))
+    (uuid ad2f47b8-7867-49ef-9de6-4d297eb9ffcf)
+  )
+  (wire (pts (xy 233.68 130.81) (xy 233.68 142.24))
+    (stroke (width 0) (type default))
+    (uuid ad43875b-f60b-4f92-8065-efab92d6270a)
+  )
+  (wire (pts (xy 114.3 45.72) (xy 137.16 45.72))
+    (stroke (width 0) (type default))
+    (uuid b14981dd-df52-417c-b778-de3d5ea4779e)
+  )
+  (wire (pts (xy 90.17 63.5) (xy 80.01 63.5))
+    (stroke (width 0) (type default))
+    (uuid b1c84141-bd76-43e9-b09b-97fbda1ea6f9)
+  )
+  (wire (pts (xy 114.3 93.98) (xy 137.16 93.98))
+    (stroke (width 0) (type default))
+    (uuid b36f6396-e4ee-47e2-ab7c-09fa9accf4dc)
+  )
+  (wire (pts (xy 162.56 82.55) (xy 162.56 69.85))
+    (stroke (width 0) (type default))
+    (uuid b6e6059d-5aff-4687-9538-2d4fc4f2d6a4)
+  )
+  (wire (pts (xy 105.41 111.76) (xy 105.41 87.63))
+    (stroke (width 0) (type default))
+    (uuid b7624fe5-6a06-41d0-a875-2d796e71054b)
+  )
+  (wire (pts (xy 137.16 82.55) (xy 137.16 69.85))
+    (stroke (width 0) (type default))
+    (uuid ba8754e6-6fed-4266-be96-dc254f0acd92)
+  )
+  (wire (pts (xy 214.63 111.76) (xy 204.47 111.76))
+    (stroke (width 0) (type default))
+    (uuid bc042a7a-1f05-4112-a901-0edfd0581eb1)
+  )
+  (wire (pts (xy 213.36 130.81) (xy 213.36 118.11))
+    (stroke (width 0) (type default))
+    (uuid bc40d7b1-b8c8-4dc7-8573-b530dd6e5340)
+  )
+  (polyline (pts (xy 46.99 199.39) (xy 46.99 187.96))
+    (stroke (width 1) (type default) (color 255 153 0 1))
+    (uuid bd0f8c74-aa2f-4ff7-b554-1353e888790e)
+  )
+
+  (wire (pts (xy 114.3 130.81) (xy 114.3 118.11))
+    (stroke (width 0) (type default))
+    (uuid be15db15-0877-4ea9-8595-0908b8dcad7f)
+  )
+  (wire (pts (xy 187.96 118.11) (xy 213.36 118.11))
+    (stroke (width 0) (type default))
+    (uuid be5be656-7737-475a-9b2d-9dfb350bd370)
+  )
+  (wire (pts (xy 146.05 63.5) (xy 147.32 63.5))
+    (stroke (width 0) (type default))
+    (uuid bf868995-2e92-4f7c-951f-49d94dab9b5e)
+  )
+  (wire (pts (xy 204.47 160.02) (xy 204.47 135.89))
+    (stroke (width 0) (type default))
+    (uuid c0ae48ee-4979-41b1-b2cd-43ed6c97b71b)
+  )
+  (polyline (pts (xy 41.91 182.88) (xy 41.91 167.64))
+    (stroke (width 1) (type default) (color 255 153 0 1))
+    (uuid c2cf4e8a-a76e-4439-8091-f9217e2728ce)
+  )
+
+  (wire (pts (xy 88.9 69.85) (xy 114.3 69.85))
+    (stroke (width 0) (type default))
+    (uuid c4cdb94a-d018-47d8-aaa4-bc071199e87d)
+  )
+  (wire (pts (xy 172.72 82.55) (xy 172.72 87.63))
+    (stroke (width 0) (type default))
+    (uuid c5197ba4-438c-4946-bfac-2450f41f6e30)
+  )
+  (wire (pts (xy 162.56 45.72) (xy 187.96 45.72))
+    (stroke (width 0) (type default))
+    (uuid c5cf2cab-925c-4933-85b0-5207537615dc)
+  )
+  (wire (pts (xy 187.96 21.59) (xy 213.36 21.59))
+    (stroke (width 0) (type default))
+    (uuid c6901165-5409-44a0-946c-5a8c12fc82cc)
+  )
+  (wire (pts (xy 88.9 118.11) (xy 114.3 118.11))
+    (stroke (width 0) (type default))
+    (uuid c79715bb-e949-4ce6-9bdb-1d8baf453b24)
+  )
+  (wire (pts (xy 115.57 135.89) (xy 105.41 135.89))
+    (stroke (width 0) (type default))
+    (uuid c8bad262-c6da-41b3-88f1-ee6faa42a577)
+  )
+  (wire (pts (xy 189.23 63.5) (xy 179.07 63.5))
+    (stroke (width 0) (type default))
+    (uuid c99f7003-865e-4f3a-a82e-e97904b6e542)
+  )
+  (wire (pts (xy 198.12 34.29) (xy 198.12 39.37))
+    (stroke (width 0) (type default))
+    (uuid c9fe75f7-93f6-433b-aac8-e835891b77a8)
+  )
+  (wire (pts (xy 146.05 111.76) (xy 147.32 111.76))
+    (stroke (width 0) (type default))
+    (uuid cc111954-08cd-4482-ae32-4cf08d88fe6c)
+  )
+  (wire (pts (xy 189.23 87.63) (xy 179.07 87.63))
+    (stroke (width 0) (type default))
+    (uuid cc3f6b34-ff20-46a0-b84d-fae647d228f1)
+  )
+  (wire (pts (xy 138.43 63.5) (xy 128.27 63.5))
+    (stroke (width 0) (type default))
+    (uuid cd3b25c4-35d8-4971-a40e-8675b492770a)
+  )
+  (wire (pts (xy 90.17 135.89) (xy 80.01 135.89))
+    (stroke (width 0) (type default))
+    (uuid ced70f25-e58e-46e5-960f-fbe54ecf7ab9)
+  )
+  (wire (pts (xy 222.25 87.63) (xy 223.52 87.63))
+    (stroke (width 0) (type default))
+    (uuid cef71931-d4b4-4130-b218-10a64d4bf005)
+  )
+  (wire (pts (xy 223.52 106.68) (xy 223.52 111.76))
+    (stroke (width 0) (type default))
+    (uuid cf383070-095c-4c81-ac22-91d939178be9)
+  )
+  (wire (pts (xy 172.72 106.68) (xy 172.72 111.76))
+    (stroke (width 0) (type default))
+    (uuid cfd5f2a8-6ac1-4f81-8813-79445eccac69)
+  )
+  (polyline (pts (xy 41.91 167.64) (xy 10.16 167.64))
+    (stroke (width 1) (type default) (color 255 153 0 1))
+    (uuid d0cf28e9-8bde-46c6-8218-75c826b071fb)
+  )
+
+  (wire (pts (xy 187.96 82.55) (xy 187.96 69.85))
+    (stroke (width 0) (type default))
+    (uuid d0ffa66e-4f68-4be1-9408-7b95ca0f1c5d)
+  )
+  (wire (pts (xy 189.23 135.89) (xy 179.07 135.89))
+    (stroke (width 0) (type default))
+    (uuid d198b271-59b8-4d7e-a9c0-847d170bb16d)
+  )
+  (wire (pts (xy 137.16 21.59) (xy 162.56 21.59))
+    (stroke (width 0) (type default))
+    (uuid d1e9f99b-ef54-48c4-a347-23e781153cee)
+  )
+  (wire (pts (xy 153.67 39.37) (xy 163.83 39.37))
+    (stroke (width 0) (type default))
+    (uuid d72857f7-53f7-4e50-ab30-ef97f54410ad)
+  )
+  (wire (pts (xy 80.01 135.89) (xy 80.01 111.76))
+    (stroke (width 0) (type default))
+    (uuid d9150ca4-c883-433a-824a-11cbe3311cc3)
+  )
+  (wire (pts (xy 124.46 34.29) (xy 124.46 39.37))
+    (stroke (width 0) (type default))
+    (uuid da691326-a1eb-4fc5-8bb8-c978151f2e96)
+  )
+  (wire (pts (xy 179.07 63.5) (xy 179.07 87.63))
+    (stroke (width 0) (type default))
+    (uuid db7f56fa-0c84-488f-ad87-1140d8303790)
+  )
+  (wire (pts (xy 80.01 63.5) (xy 80.01 39.37))
+    (stroke (width 0) (type default))
+    (uuid de104382-f082-4377-be08-7aee045c974e)
+  )
+  (wire (pts (xy 240.03 160.02) (xy 204.47 160.02))
+    (stroke (width 0) (type default))
+    (uuid de43d24b-32f0-4b06-8d0f-593f27432619)
+  )
+  (wire (pts (xy 88.9 118.11) (xy 88.9 130.81))
+    (stroke (width 0) (type default))
+    (uuid de79daf2-6ef8-4434-a26f-ce7e3e9de3d1)
+  )
+  (wire (pts (xy 162.56 142.24) (xy 187.96 142.24))
+    (stroke (width 0) (type default))
+    (uuid de8cb720-7ffe-4bb6-beee-38654a730a12)
+  )
+  (wire (pts (xy 137.16 34.29) (xy 137.16 21.59))
+    (stroke (width 0) (type default))
+    (uuid ded529c7-8133-4d99-a666-0bc628edb51d)
+  )
+  (wire (pts (xy 179.07 39.37) (xy 189.23 39.37))
+    (stroke (width 0) (type default))
+    (uuid deed67af-7418-4b5a-9e99-e96b9e570e38)
+  )
+  (wire (pts (xy 204.47 111.76) (xy 204.47 87.63))
+    (stroke (width 0) (type default))
+    (uuid df388bed-69ba-4565-821f-fcb67bd96811)
+  )
+  (wire (pts (xy 196.85 160.02) (xy 198.12 160.02))
+    (stroke (width 0) (type default))
+    (uuid e0833315-b779-452d-8aa7-590e870a56c9)
+  )
+  (wire (pts (xy 153.67 160.02) (xy 153.67 135.89))
+    (stroke (width 0) (type default))
+    (uuid e1ac7b66-ab2b-494f-b2b3-3bc491844e8c)
+  )
+  (wire (pts (xy 222.25 135.89) (xy 223.52 135.89))
+    (stroke (width 0) (type default))
+    (uuid e242d076-baca-4abb-88f0-e7f28efd148e)
+  )
+  (wire (pts (xy 105.41 135.89) (xy 105.41 111.76))
+    (stroke (width 0) (type default))
+    (uuid e2e0030e-f3f3-4178-acf7-6723f2858d75)
+  )
+  (wire (pts (xy 146.05 160.02) (xy 147.32 160.02))
+    (stroke (width 0) (type default))
+    (uuid e33ffe1a-d26c-4e36-accc-e7e837383009)
+  )
+  (wire (pts (xy 97.79 87.63) (xy 99.06 87.63))
+    (stroke (width 0) (type default))
+    (uuid e3ed7746-a40d-4517-b727-350c4f3be703)
+  )
+  (wire (pts (xy 114.3 118.11) (xy 137.16 118.11))
+    (stroke (width 0) (type default))
+    (uuid e4e02765-ee61-4a91-b7f0-95503fc81002)
+  )
+  (wire (pts (xy 57.15 142.24) (xy 88.9 142.24))
+    (stroke (width 0) (type default))
+    (uuid e7395b8a-ea3d-4457-9376-a6ddeb2695cb)
+  )
+  (wire (pts (xy 187.96 106.68) (xy 187.96 93.98))
+    (stroke (width 0) (type default))
+    (uuid e9b84a63-4001-4de2-802b-b4c976d6cb2e)
+  )
+  (wire (pts (xy 187.96 34.29) (xy 187.96 21.59))
+    (stroke (width 0) (type default))
+    (uuid ea94ba01-cf37-415f-bc7d-823ad372ffb9)
+  )
+  (wire (pts (xy 153.67 111.76) (xy 153.67 87.63))
+    (stroke (width 0) (type default))
+    (uuid ec1b6bd2-140c-4209-b187-6e460ad95400)
+  )
+  (wire (pts (xy 171.45 160.02) (xy 172.72 160.02))
+    (stroke (width 0) (type default))
+    (uuid ee145588-0fc9-4511-881c-6b3ca02a3ac9)
+  )
+  (wire (pts (xy 105.41 63.5) (xy 105.41 39.37))
+    (stroke (width 0) (type default))
+    (uuid ef2f230d-1762-4738-8667-7ebfad5235dd)
+  )
+  (wire (pts (xy 57.15 118.11) (xy 88.9 118.11))
+    (stroke (width 0) (type default))
+    (uuid ef2f2a4d-dbcb-4d05-a3fa-ec7871919d82)
+  )
+  (wire (pts (xy 204.47 63.5) (xy 204.47 87.63))
+    (stroke (width 0) (type default))
+    (uuid ef43b01a-9965-4843-a6a5-9056f5a65737)
+  )
+  (wire (pts (xy 196.85 63.5) (xy 198.12 63.5))
+    (stroke (width 0) (type default))
+    (uuid f02b018e-0a61-4c7a-a526-f0867801bdaa)
+  )
+  (wire (pts (xy 105.41 39.37) (xy 105.41 15.24))
+    (stroke (width 0) (type default))
+    (uuid f3e2d94f-e5be-40c5-99c0-df39a627abdb)
+  )
+  (wire (pts (xy 123.19 111.76) (xy 124.46 111.76))
+    (stroke (width 0) (type default))
+    (uuid f404a187-45fa-42f6-9e9d-62fe696c45ea)
+  )
+  (wire (pts (xy 162.56 93.98) (xy 187.96 93.98))
+    (stroke (width 0) (type default))
+    (uuid f55bf66e-48de-48c6-b79f-70235f267e2e)
+  )
+  (wire (pts (xy 138.43 135.89) (xy 128.27 135.89))
+    (stroke (width 0) (type default))
+    (uuid f5bb66dc-8a5f-4bcd-8299-23f2167967d1)
+  )
+  (wire (pts (xy 204.47 39.37) (xy 214.63 39.37))
+    (stroke (width 0) (type default))
+    (uuid f5f9d263-a56c-4429-9271-579a3e9f77d7)
+  )
+  (wire (pts (xy 137.16 58.42) (xy 137.16 45.72))
+    (stroke (width 0) (type default))
+    (uuid f63a7a30-b85f-4b33-8930-d248011cb596)
+  )
+  (wire (pts (xy 128.27 135.89) (xy 128.27 111.76))
+    (stroke (width 0) (type default))
+    (uuid f7a02bf6-f1e5-468f-93b3-90059b7fde8f)
+  )
+  (wire (pts (xy 214.63 63.5) (xy 204.47 63.5))
+    (stroke (width 0) (type default))
+    (uuid fa14169f-c9a9-464f-be41-8240d54ce516)
+  )
+  (wire (pts (xy 124.46 106.68) (xy 124.46 111.76))
+    (stroke (width 0) (type default))
+    (uuid fa414ec9-aeb7-4cb6-9845-a7df53aa819e)
+  )
+  (wire (pts (xy 137.16 154.94) (xy 137.16 142.24))
+    (stroke (width 0) (type default))
+    (uuid fabce7fe-120e-4163-938c-bab2c943848a)
+  )
+  (wire (pts (xy 97.79 135.89) (xy 99.06 135.89))
+    (stroke (width 0) (type default))
+    (uuid fad9f0b8-b808-469a-a8a5-0483dd92504f)
+  )
+  (wire (pts (xy 196.85 111.76) (xy 198.12 111.76))
+    (stroke (width 0) (type default))
+    (uuid fdd498b0-721b-47b4-b225-de96ab487330)
+  )
+  (wire (pts (xy 179.07 160.02) (xy 179.07 135.89))
+    (stroke (width 0) (type default))
+    (uuid fe98c19d-0393-4414-a17a-8f9d4e6a557e)
+  )
+  (polyline (pts (xy 10.16 199.39) (xy 46.99 199.39))
+    (stroke (width 1) (type default) (color 255 153 0 1))
+    (uuid fed55e78-1043-4e43-b217-a97b66f3ead9)
+  )
+  (polyline (pts (xy 46.99 187.96) (xy 44.45 187.96))
+    (stroke (width 1) (type default) (color 255 153 0 1))
+    (uuid fed58351-f621-4cce-bd52-399c3932465d)
+  )
+
+  (wire (pts (xy 153.67 135.89) (xy 153.67 111.76))
+    (stroke (width 0) (type default))
+    (uuid ffb699cd-2510-40dc-b422-5fda5858bf16)
+  )
+
+  (image (at 49.53 182.88)
+    (uuid ee6eede2-3fb3-4460-8f7d-755d5b808420)
+    (data
+      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
+    )
+  )
+
+  (text_box "6x Rows and 7x columns => 13x GPIOs required"
+    (at 13.97 156.21 0) (size 20.32 10.16)
+    (stroke (width 0) (type default))
+    (fill (type color) (color 255 153 0 1))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid 37206095-4032-42aa-a673-81d03811472c)
+  )
+  (text_box "Electrically is in the last column/row but physically place in previous row"
+    (at 246.38 110.49 0) (size 21.59 11.43)
+    (stroke (width 0) (type default))
+    (fill (type color) (color 255 153 0 1))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid ac708e7d-af50-4665-a96e-0fe5c493618c)
+  )
 
   (text "Select RGB LED depending stock, QMK supported PNs are:\n- WS2811, WS2812, WS2812B, WS2812C, etc.\n- SK6812, SK6812MINI, SK6805\n- APA102"
-    (at 97.79 38.1 0)
+    (at 242.57 160.02 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7a3b7a93-0af9-4b17-8dd2-d264470c77f1)
   )
 
-  (symbol (lib_id "power:+3V3") (at 58.42 29.21 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 19e2298a-5458-48a5-bb18-d35d30340dba)
-    (property "Reference" "#PWR017" (at 58.42 33.02 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (at 58.42 24.13 0)
+  (hierarchical_label "ROW_3" (shape input) (at 57.15 69.85 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 03250058-f796-4c3e-be6d-0c8954c5adef)
+  )
+  (hierarchical_label "COLUMN_1" (shape input) (at 76.2 15.24 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 03f44a29-0b36-4fec-9726-170a49b12714)
+  )
+  (hierarchical_label "ROW_6" (shape input) (at 57.15 142.24 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 12594bca-f942-44d3-ac08-73f25128cab4)
+  )
+  (hierarchical_label "COLUMN_2" (shape input) (at 101.6 15.24 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 2c72d4fe-e329-4a4f-b2c8-1442ce1a84d9)
+  )
+  (hierarchical_label "COLUMN_3" (shape input) (at 124.46 15.24 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 2ef76418-9424-42a8-ac57-fea5054edd2b)
+  )
+  (hierarchical_label "ROW_4" (shape input) (at 57.15 93.98 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 4cc8fef1-77f5-481a-b91f-c3694f87adf0)
+  )
+  (hierarchical_label "COLUMN_5" (shape input) (at 175.26 15.24 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 6566ad29-343c-491f-b408-dd147b34eb9a)
+  )
+  (hierarchical_label "ROW_2" (shape input) (at 57.15 45.72 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 6fc11972-de6a-4662-93bd-d2a157e29054)
+  )
+  (hierarchical_label "COLUMN_4" (shape input) (at 149.86 15.24 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid a5454acb-386f-4a37-90b3-6be54b07eaf1)
+  )
+  (hierarchical_label "COLUMN_6" (shape input) (at 200.66 15.24 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid ca6bb636-63fe-4dbc-985a-295b66d71f71)
+  )
+  (hierarchical_label "ROW_5" (shape input) (at 57.15 118.11 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid daa91a4a-cd5a-4ccc-ba78-e929ef786f51)
+  )
+  (hierarchical_label "ROW_1" (shape input) (at 57.15 21.59 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid f5ac89f9-1136-41f9-a894-c34de4515f1b)
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 218.44 135.89 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 0c0a70a1-6e1a-4841-9323-46cdb573844b)
+    (property "Reference" "D40" (at 218.44 133.35 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 58.42 29.21 0)
+    (property "Value" "1N4148W" (at 218.44 138.43 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 218.44 140.335 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 58.42 29.21 0)
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 218.44 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid da9de0b6-85da-4fc1-b3e3-8ca71b744f29))
+    (property "Sim.Device" "D" (at 218.44 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 218.44 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid cbc29cd4-22e6-4a51-ac5d-53c59f74e992))
+    (pin "2" (uuid 6daf8f25-52d5-4ed0-ba0c-167cd5337539))
     (instances
       (project "KeyBoard01_Left"
-        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/9cc5f9c6-3c68-4ae5-a9ab-38645611b9ab"
-          (reference "#PWR017") (unit 1)
-        )
         (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
-          (reference "#PWR039") (unit 1)
+          (reference "D40") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Diode:1N4148W") (at 60.96 36.83 90) (unit 1)
+  (symbol (lib_id "Switch:SW_Push") (at 193.04 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 0c94a038-f8d8-421c-bb74-0df6e2e96bfa)
+    (property "Reference" "SW34" (at 193.04 149.86 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 193.04 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 193.04 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 193.04 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c59695f4-ed47-4c41-888d-872cfb5a18f0))
+    (pin "2" (uuid bc989c3c-8e1c-4ccf-ad8b-6e8ecc8bda44))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW34") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 193.04 63.5 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 194a9112-81d7-4e13-a4eb-69e8fb5a3d1e)
+    (property "Reference" "D16" (at 193.04 60.96 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 193.04 66.04 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 193.04 67.945 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 193.04 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 193.04 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 193.04 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid fc30a32a-7f58-4af5-89b5-0820c91efc87))
+    (pin "2" (uuid 4e808272-a5ef-442f-817a-a43d6b2cfefd))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D16") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 167.64 106.68 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 1ce198d5-8020-4ab4-ab37-7ceba1c59d11)
+    (property "Reference" "SW29" (at 167.64 101.6 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 167.64 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 167.64 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 167.64 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid be958d98-d74e-49ac-82a4-a5ae8d37faa6))
+    (pin "2" (uuid a2b93c15-d128-43bd-b341-6798f9692064))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW29") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 93.98 39.37 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 1eaaa09d-b0e9-4ca5-a735-d4408b3cb570)
-    (property "Reference" "D4" (at 63.5 35.56 90)
-      (effects (font (size 1.27 1.27)) (justify right))
+    (property "Reference" "D4" (at 93.98 36.83 0)
+      (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "1N4148W" (at 63.5 38.1 90)
-      (effects (font (size 1.27 1.27)) (justify right))
+    (property "Value" "1N4148W" (at 93.98 41.91 0)
+      (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_SOD-123" (at 65.405 36.83 0)
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 93.98 43.815 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 60.96 36.83 0)
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 93.98 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Sim.Device" "D" (at 60.96 36.83 0)
+    (property "Sim.Device" "D" (at 93.98 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Sim.Pins" "1=K 2=A" (at 60.96 36.83 0)
+    (property "Sim.Pins" "1=K 2=A" (at 93.98 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2afc8cb9-aac5-4e09-9305-5f034cf6386f))
@@ -475,86 +2083,1941 @@
     )
   )
 
-  (symbol (lib_id "LED:WS2812") (at 100.33 63.5 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3f4b4352-9b3e-400b-ad47-a2959b408062)
-    (property "Reference" "D3" (at 110.49 59.8521 0)
+  (symbol (lib_id "Diode:1N4148W") (at 142.24 39.37 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 1ed676c8-caf1-4195-9af8-cd3b247dbfad)
+    (property "Reference" "D8" (at 142.24 36.83 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "WS2812" (at 110.49 62.3921 0)
+    (property "Value" "1N4148W" (at 142.24 41.91 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_DIP:DIP-8-16_W7.62mm_Socket_LongPads" (at 101.6 71.12 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 142.24 43.815 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812.pdf" (at 102.87 73.025 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 142.24 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "5" (uuid e350eea0-1984-4d44-968d-47a8ed1c37d4))
-    (pin "3" (uuid a2139510-7644-448e-abde-c5922cc50ad8))
-    (pin "6" (uuid 9bc21092-4f02-4081-845f-1cf001360df5))
-    (pin "4" (uuid 6707e53a-5206-4b67-9e0d-91f3b2626c50))
-    (pin "1" (uuid 6c13c55a-1c34-4fd9-a944-0808dbd0a0c9))
-    (pin "2" (uuid f01b7404-01fe-42eb-a895-1f8928eeb641))
+    (property "Sim.Device" "D" (at 142.24 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 142.24 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 86e45c3f-de1f-4761-a6da-20c31dae5de2))
+    (pin "2" (uuid d0272cf2-ebc7-476e-acbb-2745ae280bec))
     (instances
       (project "KeyBoard01_Left"
         (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
-          (reference "D3") (unit 1)
+          (reference "D8") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "LED:APA102") (at 76.2 63.5 0) (unit 1)
+  (symbol (lib_id "Switch:SW_Push") (at 119.38 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 69f71828-ffd1-4afb-bc28-53db70fb5de8)
-    (property "Reference" "D2" (at 78.3941 53.34 0)
-      (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 2b0717d1-0a28-421c-999b-30b111592a7f)
+    (property "Reference" "SW9" (at 119.38 53.34 0)
+      (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "APA102" (at 78.3941 55.88 0)
-      (effects (font (size 1.27 1.27)) (justify left))
+    (property "Value" "SW_Push" (at 119.38 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "LED_SMD:LED_RGB_5050-6" (at 77.47 71.12 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
+    (property "Footprint" "" (at 119.38 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "http://www.led-color.com/upload/201506/APA102%20LED.pdf" (at 78.74 73.025 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
+    (property "Datasheet" "~" (at 119.38 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 926ae4bc-de43-4b71-bfbe-a6d5fcf5f24d))
-    (pin "2" (uuid e581b22d-ccf9-43ff-b705-d3f2fe274df8))
-    (pin "5" (uuid 317bd043-84ad-4d97-a036-d612ea69fed5))
-    (pin "3" (uuid 052e830e-3f48-4811-af52-35fe84db5f16))
-    (pin "4" (uuid d7562bbc-673b-4492-9b62-373ebb4ef05a))
-    (pin "6" (uuid 9f003989-0228-4496-ab8d-a420723c9a56))
+    (pin "1" (uuid a3617ac1-c407-47cd-9f34-c17ebafb69a1))
+    (pin "2" (uuid 03c98145-83a5-47a5-82ac-9fe4a55d893a))
     (instances
       (project "KeyBoard01_Left"
         (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
-          (reference "D2") (unit 1)
+          (reference "SW9") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 123.19 71.12 0) (unit 1)
+  (symbol (lib_id "Switch:SW_Push") (at 93.98 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid c20a463a-8dc5-469e-8fa2-aa1984e5a66a)
-    (property "Reference" "#PWR038" (at 123.19 77.47 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 123.19 76.2 0)
+    (uuid 2ec5ee4e-e6db-407a-9f04-aa151bc80f58)
+    (property "Reference" "SW20" (at 93.98 101.6 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 123.19 71.12 0)
+    (property "Value" "SW_Push" (at 93.98 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 123.19 71.12 0)
+    (property "Footprint" "" (at 93.98 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid adf2dd59-a729-498d-8516-60a612de858b))
+    (property "Datasheet" "~" (at 93.98 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9eb7ca17-7bfc-46de-af60-80c7c075c14b))
+    (pin "2" (uuid f408f28c-f07e-4c23-a77a-6f5c1b5992dc))
     (instances
       (project "KeyBoard01_Left"
         (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
-          (reference "#PWR038") (unit 1)
+          (reference "SW20") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 119.38 130.81 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 308ea363-9674-4c5e-94a3-1febc15fb855)
+    (property "Reference" "SW24" (at 119.38 125.73 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 119.38 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 119.38 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 119.38 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 959ebe8c-2b99-4658-b7cd-942e34658e02))
+    (pin "2" (uuid b3dac627-230e-4545-8169-742488d134cf))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW24") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 119.38 63.5 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 30bf3d4b-fa93-40f4-94ea-9f2924680b63)
+    (property "Reference" "D13" (at 119.38 60.96 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 119.38 66.04 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 119.38 67.945 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 119.38 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 119.38 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 119.38 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 053422f4-c386-4aaa-a1fd-2bfeba084a52))
+    (pin "2" (uuid 8167ee47-a81b-4aa8-a27a-f2010755aa9e))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D13") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 119.38 106.68 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 321f8b78-88ac-4271-b00a-b5c942c85841)
+    (property "Reference" "SW23" (at 119.38 101.6 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 119.38 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 119.38 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 119.38 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6c9553ad-2d02-4626-bad1-fba0ff5fced4))
+    (pin "2" (uuid adfec28e-eada-4500-a767-e7578b69d833))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW23") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 193.04 82.55 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 33ffce45-7520-46ce-8978-3bd1ca9bf9f8)
+    (property "Reference" "SW18" (at 193.04 77.47 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 193.04 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 193.04 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 193.04 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ed0c5fc5-0362-4564-b680-16656b3b8b0e))
+    (pin "2" (uuid d2b37c1d-bb3e-4d85-9989-8f32daf2f67a))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW18") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 193.04 87.63 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 36dd4485-6d29-4621-8730-1f47b8337b38)
+    (property "Reference" "D22" (at 193.04 85.09 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 193.04 90.17 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 193.04 92.075 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 193.04 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 193.04 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 193.04 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b3e66632-bf0c-4475-b535-6e8f9d13c718))
+    (pin "2" (uuid cb67f423-0f24-4a4c-8fb7-0ed1d1ef4f42))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D22") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 119.38 39.37 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 3acded5a-9889-4a93-b0d1-3bb86f32100b)
+    (property "Reference" "D7" (at 119.38 36.83 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 119.38 41.91 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 119.38 43.815 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 119.38 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 119.38 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 119.38 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8e8b3911-7ec5-4c3d-8ba3-08b28a1c7421))
+    (pin "2" (uuid d7e52b64-4134-4bd6-a8ea-f352e03c3961))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D7") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 119.38 82.55 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 41625e4c-33e0-400b-b0ab-6b24296eead7)
+    (property "Reference" "SW15" (at 119.38 77.47 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 119.38 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 119.38 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 119.38 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 91334c12-d6d2-4f48-94e9-a89da4467ffd))
+    (pin "2" (uuid 19a248a9-660b-478f-862e-f13686aff3e6))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW15") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 142.24 82.55 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 44aa3273-08d7-4f82-8f69-424f2d7c6ed1)
+    (property "Reference" "SW16" (at 142.24 77.47 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 142.24 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 142.24 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 142.24 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 757779e5-6d87-422b-b086-2b1a9d26a3a7))
+    (pin "2" (uuid ed71a0a2-7367-466c-b2d5-fc979f8f9c0c))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW16") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 167.64 63.5 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 48493108-98df-4896-a4ae-da26b9fa6104)
+    (property "Reference" "D15" (at 167.64 60.96 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 167.64 66.04 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 167.64 67.945 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 167.64 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 167.64 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 167.64 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8865469c-9c63-4973-acfe-6b2e88c3d24e))
+    (pin "2" (uuid 0cc6ac30-4e00-4aad-bdfd-9bdc41aaa659))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D15") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 142.24 111.76 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 4a450608-7836-4003-9c7f-dd1abc583839)
+    (property "Reference" "D30" (at 142.24 109.22 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 142.24 114.3 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 142.24 116.205 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 142.24 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 142.24 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 142.24 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid bb1c9257-c422-4ca6-bbbe-e04f0223b12a))
+    (pin "2" (uuid 13919279-b4db-43ab-aece-6e48167603f3))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D30") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 218.44 106.68 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 4db42083-36ae-4e5e-8859-f432fbce5776)
+    (property "Reference" "SW35" (at 218.44 101.6 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 218.44 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 218.44 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 218.44 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c7f60182-70f2-4532-b0a0-6b15f424bd50))
+    (pin "2" (uuid 76bd3bbd-16ec-4508-bd6c-9113610ba278))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW35") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 119.38 34.29 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 512028c6-65dc-4983-9703-2719098bda96)
+    (property "Reference" "SW3" (at 119.38 29.21 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 119.38 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 119.38 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 119.38 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 2d46a86b-6871-4abc-8a5d-9e5969dc8fa5))
+    (pin "2" (uuid ff0f0217-a46e-4c6d-a51e-9938c4756b7c))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW3") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 167.64 58.42 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 5ba6f305-6ddc-4ed6-9a03-2d759d64b8d9)
+    (property "Reference" "SW11" (at 167.64 53.34 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 167.64 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 167.64 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 167.64 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 192361d3-8232-4d30-8b65-dcee88050cd5))
+    (pin "2" (uuid eb53dda6-1b42-4351-8569-29960e9167a0))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW11") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 167.64 34.29 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 5cfe73ee-f42e-4d6c-a932-a33aa2f21ff6)
+    (property "Reference" "SW5" (at 167.64 29.21 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 167.64 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 167.64 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 167.64 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1a742b4a-8f22-4dd7-9ecf-23928101621d))
+    (pin "2" (uuid b1dd7849-7de5-416e-a85a-22a72d8853f3))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW5") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 193.04 34.29 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 5da955e5-3078-4d73-bc16-45d3bcf34f6b)
+    (property "Reference" "SW6" (at 193.04 29.21 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 193.04 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 193.04 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 193.04 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ff5a16e2-8ffd-42d5-a368-15f7a55ca390))
+    (pin "2" (uuid f0c2d56e-cd2c-4a4e-aa7f-5c3049cfce67))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW6") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 167.64 111.76 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 61c9040a-46d8-4a7d-a6c6-bd03f136e998)
+    (property "Reference" "D33" (at 167.64 109.22 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 167.64 114.3 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 167.64 116.205 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 167.64 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 167.64 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 167.64 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c1e24eff-9216-4c06-8185-b17a539d2dc3))
+    (pin "2" (uuid 47d21042-5cf4-4afc-b12c-3d6af32d59bf))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D33") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 193.04 106.68 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 659d2953-7772-4af9-9616-bd7c9a43dfa0)
+    (property "Reference" "SW32" (at 193.04 101.6 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 193.04 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 193.04 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 193.04 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7e851f7c-b946-449b-9a93-1bc3fb260ee1))
+    (pin "2" (uuid 132a0b8a-fcb2-4ec3-8bbb-ed1b3ece3add))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW32") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 93.98 135.89 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 66cd7268-eb29-4f4f-ab11-0bd2f50decd6)
+    (property "Reference" "D25" (at 93.98 133.35 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 93.98 138.43 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 93.98 140.335 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 93.98 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 93.98 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 93.98 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c1501370-f173-4137-ae04-568bfd8fbda8))
+    (pin "2" (uuid 19746cae-71b3-403e-a8c0-0c3193e3d7d1))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D25") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 243.84 130.81 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 672cd78a-980a-4b96-9ed5-7ce23a1a8a27)
+    (property "Reference" "SW37" (at 243.84 125.73 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 243.84 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 243.84 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 243.84 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 467ce97b-bd8d-4ed4-aa7f-3fd541695324))
+    (pin "2" (uuid ba6c4818-b0d6-421d-8207-2042a18bba2d))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW37") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 142.24 130.81 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 6a1726c5-b118-4312-a2e5-f459d8bd5ef7)
+    (property "Reference" "SW27" (at 142.24 125.73 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 142.24 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 142.24 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 142.24 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3aab1aa1-ccfe-4f3b-9e09-c0b932cffa81))
+    (pin "2" (uuid 294125c1-a7af-45bd-abe3-d982cb2f98ec))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW27") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 119.38 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 6a6894fa-32e2-4a8e-836d-a4013dc82a64)
+    (property "Reference" "D29" (at 119.38 157.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 119.38 162.56 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 119.38 164.465 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 119.38 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 119.38 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 119.38 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b7a175aa-0b4b-48b6-adc0-09c2d6272332))
+    (pin "2" (uuid 04c874a0-f6e5-46da-9157-60e2d4c636e6))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D29") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 93.98 58.42 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 6d8a4a1c-0278-4d0c-b1f4-18878f385d6e)
+    (property "Reference" "SW8" (at 93.98 53.34 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 93.98 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 93.98 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 93.98 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 88e425af-8210-4d62-9b2f-4ee1ee17be5c))
+    (pin "2" (uuid 0aaee782-13dc-4409-bbfa-eca22bd0e27c))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW8") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 193.04 39.37 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 7111614a-705b-46e4-b43f-8928eed636e3)
+    (property "Reference" "D10" (at 193.04 36.83 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 193.04 41.91 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 193.04 43.815 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 193.04 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 193.04 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 193.04 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b6331d9a-4fa4-454d-b009-66865a96331c))
+    (pin "2" (uuid b01a324f-15c6-4908-9bf0-342358cdd487))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D10") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 93.98 34.29 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 720fab3c-3fb5-4f78-9587-7df2f13533d9)
+    (property "Reference" "SW1" (at 93.98 29.21 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 93.98 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 93.98 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 93.98 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 38edecc4-7b9e-4015-ae6d-4be41eca9cfa))
+    (pin "2" (uuid d3ef7849-dfba-41f8-98c6-ea70f87e0452))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 193.04 135.89 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 74d14a86-b673-4860-b322-fb7235e1a128)
+    (property "Reference" "D37" (at 193.04 133.35 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 193.04 138.43 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 193.04 140.335 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 193.04 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 193.04 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 193.04 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0dcd0eb3-b1cc-47b6-8da1-e5924de0d57c))
+    (pin "2" (uuid e99a58e3-141e-4baf-84de-7fd7fcfe761f))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D37") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 119.38 87.63 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 750e03ea-0027-4b2b-82e8-92a0afd66e35)
+    (property "Reference" "D19" (at 119.38 85.09 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 119.38 90.17 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 119.38 92.075 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 119.38 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 119.38 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 119.38 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 69b72f1a-8c49-4a4c-85fd-f5e78dedeadf))
+    (pin "2" (uuid bd1a07e4-442b-42d2-a03f-ff3e85ae35c4))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D19") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 167.64 39.37 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 757c72b3-eaeb-44e0-ac6f-526220a267a5)
+    (property "Reference" "D9" (at 167.64 36.83 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 167.64 41.91 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 167.64 43.815 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 167.64 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 167.64 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 167.64 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0bf311da-d7b1-4ba1-ac50-6143adab7b9c))
+    (pin "2" (uuid 859fc23c-1b9c-4fcb-9373-dd6779961aeb))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D9") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 193.04 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 75f6ee7d-959f-46bb-92ff-bbb4a531dad2)
+    (property "Reference" "D38" (at 193.04 157.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 193.04 162.56 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 193.04 164.465 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 193.04 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 193.04 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 193.04 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f302ed4d-27fe-4cb7-9688-74d666be0a41))
+    (pin "2" (uuid 7be89768-f036-45b5-ad1d-c41b531eafbf))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D38") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 167.64 87.63 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 799c2541-89e7-46d3-a9cb-057d1a223d5d)
+    (property "Reference" "D21" (at 167.64 85.09 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 167.64 90.17 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 167.64 92.075 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 167.64 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 167.64 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 167.64 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 27410ab7-d4de-476a-a23c-e8af8bd8cdfa))
+    (pin "2" (uuid d8b18ec2-229c-43bc-b647-61baff6ff2db))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D21") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 167.64 82.55 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 7db1bbbb-1e5b-4807-a329-c6aef619b46b)
+    (property "Reference" "SW17" (at 167.64 77.47 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 167.64 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 167.64 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 167.64 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c91ce581-86d3-4820-afab-25c51608c26e))
+    (pin "2" (uuid eef6bfa9-98eb-4127-86e7-e610d4baf17d))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW17") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 93.98 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 8248b06c-b28d-4de0-9acc-15cae1fb9066)
+    (property "Reference" "D26" (at 93.98 157.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 93.98 162.56 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 93.98 164.465 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 93.98 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 93.98 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 93.98 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid da278196-6df3-4e32-a250-1afdc19e87d2))
+    (pin "2" (uuid 75777edb-3d4d-40f8-b5f4-fe47cfd9d04f))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D26") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 142.24 106.68 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 8624e778-8c65-4fa7-8946-b621aa7125eb)
+    (property "Reference" "SW26" (at 142.24 101.6 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 142.24 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 142.24 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 142.24 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f992b404-97cb-4017-b906-623f9deb96d0))
+    (pin "2" (uuid 56c3768c-d03e-483f-9697-824c243944b6))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW26") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 142.24 58.42 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 8dcc990d-16dc-476c-8578-6596c0a63818)
+    (property "Reference" "SW10" (at 142.24 53.34 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 142.24 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 142.24 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 142.24 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a54ab8bc-73b6-4d71-a230-77178a38a871))
+    (pin "2" (uuid 093c94d4-26b5-420a-92a2-bdda80c6e5c5))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW10") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 218.44 34.29 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 903f2115-a83d-405b-b8cc-f3b907ddbea4)
+    (property "Reference" "SW7" (at 218.44 29.21 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 218.44 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 218.44 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 218.44 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 673d9224-f736-4bd7-81b4-1c7c138f2ad6))
+    (pin "2" (uuid fe5d7e99-23dc-4fda-ac9f-890505fde225))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW7") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 142.24 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 90b5d543-fc7a-412d-b957-4c2cb33d67ae)
+    (property "Reference" "D32" (at 142.24 157.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 142.24 162.56 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 142.24 164.465 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 142.24 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 142.24 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 142.24 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a4ef5dc6-7075-4ce2-86c0-3a7f77476df0))
+    (pin "2" (uuid 8ff4dda4-32c1-40ed-bcbb-3835764f3da1))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D32") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 93.98 154.94 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 9343691f-c6d0-4f2c-b7be-6b67d7fc5a31)
+    (property "Reference" "SW22" (at 93.98 149.86 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 93.98 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 93.98 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 93.98 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4d1a1d18-3ffb-4cc4-8697-8e80ef309d08))
+    (pin "2" (uuid 1f011020-d294-411e-bc6f-32c3e78ecb37))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW22") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 243.84 135.89 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 99c6e49b-b21a-4188-acc1-d3add52ed212)
+    (property "Reference" "D41" (at 243.84 133.35 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 243.84 138.43 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 243.84 140.335 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 243.84 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 243.84 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 243.84 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a0f35ea9-9e0f-4124-9418-3e7ea4413d43))
+    (pin "2" (uuid e6bb2328-2e0f-4d37-a7eb-fe7e0e1b9f88))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D41") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 167.64 154.94 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 9a6762ad-c304-4e64-9469-cfb2aa3c0733)
+    (property "Reference" "SW31" (at 167.64 149.86 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 167.64 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 167.64 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 167.64 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a2e011d3-e54d-4a51-8b98-a6084dd474c3))
+    (pin "2" (uuid b7c2799c-9c98-42e3-8837-bf498a6646f5))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW31") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 142.24 87.63 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 9ffc2d1d-d186-44aa-ae6e-595758bb33de)
+    (property "Reference" "D20" (at 142.24 85.09 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 142.24 90.17 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 142.24 92.075 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 142.24 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 142.24 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 142.24 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 111f5a8b-9d15-48ee-b5b9-49fa38cf7aad))
+    (pin "2" (uuid a25fe3d3-3bd3-46a9-86d8-48d898abc42c))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D20") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 218.44 63.5 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid a384e887-daaf-45ef-a2ac-e47044da3258)
+    (property "Reference" "D17" (at 218.44 60.96 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 218.44 66.04 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 218.44 67.945 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 218.44 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 218.44 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 218.44 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 65e29512-36e8-4a88-b563-023c3e58fb6f))
+    (pin "2" (uuid 1d87f3c9-76ea-45b7-bfcd-f5cf6b3abb8c))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D17") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 119.38 154.94 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid a8e02bea-9bec-4a8a-a595-bc1792a81591)
+    (property "Reference" "SW25" (at 119.38 149.86 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 119.38 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 119.38 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 119.38 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 135e7f2f-73eb-4458-a602-a747742d97c3))
+    (pin "2" (uuid 8aeb6ce6-fe62-4a1f-b321-f5e25d6ff235))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW25") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 142.24 34.29 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid ac5d22a8-5831-45a4-b9c4-dfd6ddba7c37)
+    (property "Reference" "SW4" (at 142.24 29.21 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 142.24 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 142.24 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 142.24 29.21 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0c61ec47-4731-489d-abb5-0cb2f200602f))
+    (pin "2" (uuid 06433549-012c-469a-8c56-b360ecf202c8))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 218.44 82.55 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid ae749081-8c3a-44ad-844a-8e5286ffd74e)
+    (property "Reference" "SW19" (at 218.44 77.47 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 218.44 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 218.44 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 218.44 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6d4e3863-5295-48af-a3f8-173029e16501))
+    (pin "2" (uuid 937f718c-43a0-4584-bbe5-337c91d304d3))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW19") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 218.44 39.37 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid b582a2c6-b58f-4bec-818b-bea9dc01ad94)
+    (property "Reference" "D11" (at 218.44 36.83 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 218.44 41.91 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 218.44 43.815 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 218.44 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 218.44 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 218.44 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 85dbeb74-d0be-498f-ad8d-53feb6e0b55d))
+    (pin "2" (uuid b58be0a3-a74a-42db-93ca-b68123963af1))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D11") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 167.64 135.89 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid b5bb2695-16cf-48c1-acd8-3e4fa32b7608)
+    (property "Reference" "D34" (at 167.64 133.35 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 167.64 138.43 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 167.64 140.335 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 167.64 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 167.64 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 167.64 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 62e73830-7e96-4cee-b942-ff210e110e80))
+    (pin "2" (uuid b15d28da-94a1-4508-bce8-aabd3e87facf))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D34") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 119.38 135.89 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid b5ebbe89-98c4-450a-aeb9-0aecc255d247)
+    (property "Reference" "D28" (at 119.38 133.35 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 119.38 138.43 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 119.38 140.335 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 119.38 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 119.38 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 119.38 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a44df754-06c7-4934-b57f-43069d780540))
+    (pin "2" (uuid b880ab2e-a5bc-4ffc-a66e-ac035f5022a8))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D28") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 218.44 130.81 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid bc9c0ae5-1a41-4af2-bbed-881a1c3266e6)
+    (property "Reference" "SW36" (at 218.44 125.73 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 218.44 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 218.44 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 218.44 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a3c92d0d-1884-4ede-af4d-8334c127d068))
+    (pin "2" (uuid 7df88ea7-bd45-4008-91f6-5c459feb58f7))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW36") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 93.98 63.5 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid c2679b86-8bce-494b-9e1b-842bf7381871)
+    (property "Reference" "D12" (at 93.98 60.96 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 93.98 66.04 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 93.98 67.945 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 93.98 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 93.98 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 93.98 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid cef64c10-ba2a-4347-8988-04cd62de38e3))
+    (pin "2" (uuid e65babfb-a4ff-4ac2-867b-5e04fb62ae4c))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D12") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 142.24 63.5 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid cf3e2c1d-39cd-4fc2-b5d0-dc203f6697b4)
+    (property "Reference" "D14" (at 142.24 60.96 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 142.24 66.04 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 142.24 67.945 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 142.24 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 142.24 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 142.24 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 757f95b0-6f36-42ec-a984-77046c0e2754))
+    (pin "2" (uuid 6764ad57-e967-49da-b66c-c6ac88c832e2))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D14") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 93.98 82.55 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid d1a0c0c8-81f7-4e2a-9759-0e752adc4ae7)
+    (property "Reference" "SW14" (at 93.98 77.47 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 93.98 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 93.98 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 93.98 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid d9d68ed9-3083-456d-8ba9-51524fb6eddf))
+    (pin "2" (uuid 4086cc99-8d2a-47ec-b9c8-6fc6633120d5))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW14") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 119.38 111.76 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid d22d42ec-40f3-4cf7-a8bc-2fccf5b1a59b)
+    (property "Reference" "D27" (at 119.38 109.22 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 119.38 114.3 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 119.38 116.205 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 119.38 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 119.38 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 119.38 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 58917a1b-f6e2-4c72-975c-2fa2d6aa6bc5))
+    (pin "2" (uuid 07306531-9377-4644-bb59-1358b83c00b2))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D27") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 167.64 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid d2b08539-0f1a-4a13-896c-9cea42660aa2)
+    (property "Reference" "D35" (at 167.64 157.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 167.64 162.56 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 167.64 164.465 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 167.64 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 167.64 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 167.64 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 19dcb8ef-6296-4fbc-b958-f2753631663c))
+    (pin "2" (uuid ae240b8d-8774-409c-9fc9-0d922b792c54))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D35") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 218.44 58.42 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid def9f854-6dfa-4dc8-8741-ec281a1099c0)
+    (property "Reference" "SW13" (at 218.44 53.34 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 218.44 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 218.44 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 218.44 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c6b0201e-7142-422b-8237-e031de8881a9))
+    (pin "2" (uuid aa0a3be3-6dd0-4499-8943-d5a53433398c))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW13") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 93.98 130.81 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid dfb1b21f-d8cb-4aec-94b0-b8338793778b)
+    (property "Reference" "SW21" (at 93.98 125.73 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 93.98 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 93.98 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 93.98 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5db3cedf-549c-4384-aba8-f4356182f71c))
+    (pin "2" (uuid 68274a70-9829-4fc0-9271-d3067af7b4b7))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW21") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 167.64 130.81 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid e716b69f-8f20-4b24-a74c-74ae4bf6d517)
+    (property "Reference" "SW30" (at 167.64 125.73 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 167.64 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 167.64 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 167.64 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 757766ae-24bc-409f-98ad-ccdd2e45258f))
+    (pin "2" (uuid 552e2b90-89f2-41ec-9ca1-eb61167501e9))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW30") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 218.44 111.76 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid e898f228-2361-4a61-bff9-88ac4ddedab1)
+    (property "Reference" "D39" (at 218.44 109.22 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 218.44 114.3 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 218.44 116.205 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 218.44 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 218.44 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 218.44 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 46753106-6373-42d4-a9e6-188a1fecd408))
+    (pin "2" (uuid 61163508-3e52-49ca-93c7-4e859bea3f74))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D39") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 93.98 87.63 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid eced89ba-431b-415b-a5e0-d3a66f29bbd5)
+    (property "Reference" "D18" (at 93.98 85.09 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 93.98 90.17 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 93.98 92.075 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 93.98 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 93.98 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 93.98 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c8bb36ae-e93a-44ce-a532-d131184c14fd))
+    (pin "2" (uuid 8efcba50-f7a1-4aad-966c-24b5a78c7133))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D18") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 142.24 135.89 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f20097a4-89fd-46ad-b687-bc48120ebb42)
+    (property "Reference" "D31" (at 142.24 133.35 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 142.24 138.43 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 142.24 140.335 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 142.24 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 142.24 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 142.24 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8c9c38c4-010c-4257-ad74-88e8849e356d))
+    (pin "2" (uuid 1562fdfc-4817-4603-8bca-764fb640ff6b))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D31") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 218.44 87.63 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f2555278-5c87-49fa-a195-3b148368be34)
+    (property "Reference" "D23" (at 218.44 85.09 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 218.44 90.17 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 218.44 92.075 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 218.44 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 218.44 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 218.44 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3de09cc4-b633-4d14-8e9c-9c16160ae039))
+    (pin "2" (uuid c69598fd-8140-40e7-99b3-515c40c1f268))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D23") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 193.04 111.76 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f5daca6f-32bb-45df-a8e7-98ec0e3a39ee)
+    (property "Reference" "D36" (at 193.04 109.22 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 193.04 114.3 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 193.04 116.205 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 193.04 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 193.04 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 193.04 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ba3c9588-468e-4255-8d1c-e8322edcc5c8))
+    (pin "2" (uuid 90d3a03b-fdc3-47a6-9ab5-dc5ed2e53b4e))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D36") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 193.04 58.42 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid f723547d-7b32-4e57-9956-bfed2d28e33c)
+    (property "Reference" "SW12" (at 193.04 53.34 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 193.04 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 193.04 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 193.04 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9caa3d85-dfbb-4045-b116-886fd5592c4f))
+    (pin "2" (uuid 32b0d827-cb70-4f87-80b1-7283ff0ed6a4))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW12") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Diode:1N4148W") (at 93.98 111.76 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f879d814-9458-4d4e-96cb-abb21f97febd)
+    (property "Reference" "D24" (at 93.98 109.22 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1N4148W" (at 93.98 114.3 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Diode_SMD:D_SOD-123" (at 93.98 116.205 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf" (at 93.98 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Device" "D" (at 93.98 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Sim.Pins" "1=K 2=A" (at 93.98 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid d6635441-9b6f-4f5b-b0df-38a3473c0b03))
+    (pin "2" (uuid 05e30e86-a83e-4d38-ba60-9845aff5f566))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "D24") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 142.24 154.94 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid f88256f8-953e-4ddb-83d3-1a4ed69f2a94)
+    (property "Reference" "SW28" (at 142.24 149.86 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 142.24 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 142.24 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 142.24 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 44b921e6-e64b-4104-b03c-678c238bbee9))
+    (pin "2" (uuid 7b3e3461-eae0-4f4f-9a0d-a7c23fa9dd09))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW28") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 193.04 130.81 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid fb78fd6e-c124-4978-a072-31b6b90837fe)
+    (property "Reference" "SW33" (at 193.04 125.73 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 193.04 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 193.04 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 193.04 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 92d3669e-0442-4fa5-9b50-75caeebb53fe))
+    (pin "2" (uuid 55e367b7-60ef-4be5-864e-cded6de7452f))
+    (instances
+      (project "KeyBoard01_Left"
+        (path "/30001e54-b931-4c99-a85a-cc67ed27d667/de361c07-2cab-4a24-85a0-a73df921af83"
+          (reference "SW33") (unit 1)
         )
       )
     )
